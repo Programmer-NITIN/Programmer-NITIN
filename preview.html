@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Programmer-NITIN · profile assets preview</title>
+  <style>
+    :root { color-scheme: dark }
+    body { background:#0d1117; color:#c9d1d9; font:15px/1.5 ui-sans-serif,Segoe UI,system-ui,sans-serif;
+           margin:0; padding:40px; }
+    h1 { font-size:24px; color:#39d353; letter-spacing:.02em; margin-bottom: 6px; }
+    h2 { font-size:13px; text-transform:uppercase; letter-spacing:.12em; color:#8b949e;
+         border-bottom:1px solid #21262d; padding-bottom:8px; margin:44px 0 18px }
+    .subtitle { color:#8b949e; font-size:14px; margin-top:0; margin-bottom:24px }
+    .row { display:flex; gap:24px; flex-wrap:wrap; align-items:flex-start }
+    .card { background:#0d1117; border:1px solid #21262d; border-radius:10px; padding:18px }
+    .card.light { background:#fff }
+    .tag { font:11px ui-monospace,Consolas,monospace; color:#8b949e; display:block; margin-bottom:10px }
+    img { display:block; max-width:100% }
+    button { background:#21262d; color:#c9d1d9; border:1px solid #30363d; border-radius:6px;
+             padding:5px 12px; font:inherit; font-size:12px; cursor:pointer; margin-left:14px;
+             vertical-align:middle; text-transform:none; letter-spacing:0; transition:all 0.2s }
+    button:hover { background:#30363d; border-color:#39d353; color:#39d353 }
+    .missing { color:#8b949e; font-style:italic; font-size:13px }
+  </style>
+</head>
+<body>
+
+  <h1>Nitin Patidar (@Programmer-NITIN)</h1>
+  <p class="subtitle">GitHub Profile Assets · Local Preview (Dark &amp; Light modes)</p>
+
+  <h2>portrait <button id="replay">replay animation</button></h2>
+  <div class="row">
+    <div class="card">
+      <span class="tag">assets/portrait.svg (dark background)</span>
+      <img class="portrait" src="assets/portrait.svg" width="320" alt="Nitin portrait">
+    </div>
+    <div class="card light">
+      <span class="tag" style="color:#57606a">assets/portrait.svg (light background)</span>
+      <img class="portrait" src="assets/portrait.svg" width="320" alt="Nitin portrait">
+    </div>
+    <div class="card">
+      <span class="tag">assets/jacket.png (original source)</span>
+      <img src="assets/jacket.png" width="320" style="border-radius:8px" alt="Original photo">
+    </div>
+  </div>
+
+  <h2>skill radar (self-rated)</h2>
+  <div class="row">
+    <div class="card">
+      <span class="tag">assets/radar-dark.svg</span>
+      <img src="assets/radar-dark.svg" width="440" alt="Skill Radar Dark">
+    </div>
+    <div class="card light">
+      <span class="tag" style="color:#57606a">assets/radar-light.svg</span>
+      <img src="assets/radar-light.svg" width="440" alt="Skill Radar Light">
+    </div>
+  </div>
+
+  <h2>language radar (live github api stats)</h2>
+  <div class="row">
+    <div class="card">
+      <span class="tag">assets/radar-langs-dark.svg</span>
+      <img src="assets/radar-langs-dark.svg" width="440" alt="Language Radar Dark">
+    </div>
+    <div class="card light">
+      <span class="tag" style="color:#57606a">assets/radar-langs-light.svg</span>
+      <img src="assets/radar-langs-light.svg" width="440" alt="Language Radar Light">
+    </div>
+  </div>
+
+  <h2>github statistics</h2>
+  <div class="row">
+    <div class="card">
+      <span class="tag">assets/card-stats-dark.svg</span>
+      <img src="assets/card-stats-dark.svg" width="480" alt="Stats Dark">
+    </div>
+    <div class="card light">
+      <span class="tag" style="color:#57606a">assets/card-stats-light.svg</span>
+      <img src="assets/card-stats-light.svg" width="480" alt="Stats Light">
+    </div>
+  </div>
+
+  <h2>selected work (featured repo cards)</h2>
+  <div class="row">
+    <div class="card">
+      <span class="tag">StartupOps (dark)</span>
+      <img src="assets/card-StartupOps-dark.svg" width="420" alt="StartupOps">
+    </div>
+    <div class="card light">
+      <span class="tag" style="color:#57606a">StartupOps (light)</span>
+      <img src="assets/card-StartupOps-light.svg" width="420" alt="StartupOps">
+    </div>
+  </div>
+  <div class="row" style="margin-top:16px">
+    <div class="card">
+      <span class="tag">Magnetic-Manuscript (dark)</span>
+      <img src="assets/card-Magnetic-Manuscript-dark.svg" width="420" alt="Magnetic Manuscript">
+    </div>
+    <div class="card light">
+      <span class="tag" style="color:#57606a">Magnetic-Manuscript (light)</span>
+      <img src="assets/card-Magnetic-Manuscript-light.svg" width="420" alt="Magnetic Manuscript">
+    </div>
+  </div>
+  <div class="row" style="margin-top:16px">
+    <div class="card">
+      <span class="tag">postureAI (dark)</span>
+      <img src="assets/card-postureAI-dark.svg" width="420" alt="postureAI">
+    </div>
+    <div class="card light">
+      <span class="tag" style="color:#57606a">postureAI (light)</span>
+      <img src="assets/card-postureAI-light.svg" width="420" alt="postureAI">
+    </div>
+  </div>
+  <div class="row" style="margin-top:16px">
+    <div class="card">
+      <span class="tag">kinetic-stadium (dark)</span>
+      <img src="assets/card-kinetic-stadium-dark.svg" width="420" alt="kinetic-stadium">
+    </div>
+    <div class="card light">
+      <span class="tag" style="color:#57606a">kinetic-stadium (light)</span>
+      <img src="assets/card-kinetic-stadium-light.svg" width="420" alt="kinetic-stadium">
+    </div>
+  </div>
+
+  <h2>contribution metrics (isometric calendar &amp; languages)</h2>
+  <div class="row">
+    <div class="card">
+      <span class="tag">assets/metrics.isocalendar.svg</span>
+      <img src="assets/metrics.isocalendar.svg" width="600" alt="Isometric Calendar">
+    </div>
+    <div class="card">
+      <span class="tag">assets/metrics.languages.svg</span>
+      <img src="assets/metrics.languages.svg" width="480" alt="Metrics Languages">
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('replay').onclick = () => {
+      document.querySelectorAll('img.portrait').forEach(img => {
+        img.src = 'assets/portrait.svg?' + Date.now();
+      });
+    };
+  </script>
+</body>
+</html>

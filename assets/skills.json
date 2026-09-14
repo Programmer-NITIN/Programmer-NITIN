@@ -1,0 +1,13 @@
+{
+  "title": "Skill Radar",
+  "_comment": "Nitin Patidar's skill radar. Values are 0-100 and self-rated; 5-8 axes reads best.",
+  "axes": [
+    { "label": "AI Development", "value": 90 },
+    { "label": "Prompt Eng",     "value": 95 },
+    { "label": "Full Stack",     "value": 85 },
+    { "label": "Animation / 3D", "value": 80 },
+    { "label": "n8n Automation", "value": 78 },
+    { "label": "C++ / Systems",  "value": 75 },
+    { "label": "DSA",            "value": 70 }
+  ]
+}

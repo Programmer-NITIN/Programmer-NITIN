@@ -1,0 +1,21 @@
+{
+  "_comment": "Featured repos, in README order. Star/fork/language come live from the API on every run; the description here overrides the repo's GitHub description.",
+  "projects": [
+    {
+      "repo": "StartupOps",
+      "description": "AI-Powered Autonomous Co-Founder Platform. Swarm of specialized AI agents helping founders execute startup ideas from ideation to launch."
+    },
+    {
+      "repo": "Magnetic-Manuscript",
+      "description": "AI-Powered Academic Manuscript Engine. Multi-agent LangGraph system converting raw research into journal-compliant papers (IEEE, Nature, ACM)."
+    },
+    {
+      "repo": "postureAI",
+      "description": "Privacy-First AI Physiotherapy & Telehealth Platform. Real-time webcam pose analysis using browser-based MediaPipe Edge AI and WebRTC."
+    },
+    {
+      "repo": "kinetic-stadium",
+      "description": "AI-Powered Smart Stadium Platform. Real-time crowd-density simulation, Dijkstra pathfinding, predictive analytics and Gemini AI guidance."
+    }
+  ]
+}
