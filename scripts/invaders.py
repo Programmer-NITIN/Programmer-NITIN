@@ -2,6 +2,10 @@
 """
 invaders.py - Generates an authentic, animated Retro Space Invaders / Arcade Galaga
 Contribution Defense SVG powered by real live GitHub contribution data.
+
+Uses SMIL animations (<animate>, <animateTransform>) instead of CSS @keyframes
+so animations work correctly when embedded via <img> tags (GitHub README, preview.html).
+
 Stdlib only. Self-contained, responsive, dark/light adaptive.
 """
 
@@ -75,7 +79,11 @@ def fetch_contributions_html(username: str) -> tuple[list[dict], int]:
 
 
 def generate_invaders_svg(days: list[dict], total_contribs: int, username: str = "Programmer-NITIN") -> str:
-    """Renders the animated Retro Space Invaders Contribution Defense SVG."""
+    """Renders the animated Retro Space Invaders Contribution Defense SVG.
+
+    All animations use SMIL (<animate>, <animateTransform>) so they work
+    correctly when the SVG is embedded via <img> tags.
+    """
     weeks: dict[int, list[dict]] = {}
     for d in days:
         weeks.setdefault(d["col"], []).append(d)
@@ -98,15 +106,39 @@ def generate_invaders_svg(days: list[dict], total_contribs: int, username: str =
     width = 860
     height = 270
 
-    # Pick 4 notable target positions for animated laser shots
-    # High active columns in Nitin's history (e.g. recent active weeks)
-    active_days = [d for d in days if d["count"] > 0]
-    active_days.sort(key=lambda d: d["count"], reverse=True)
-    top_targets = active_days[:5] if len(active_days) >= 5 else days[-5:]
+    # Animation timing constants (seconds)
+    cycle = 10.0       # Full ship patrol cycle
+    laser1_start = 1.5  # Laser 1 fires at this time in the cycle
+    laser1_dur = 1.2    # Laser 1 travel duration
+    laser2_start = 4.5  # Laser 2 fires
+    laser2_dur = 1.2
+    burst_delay = 0.15  # Explosion appears slightly after laser hits
+    burst_dur = 0.5
+    score_dur = 0.7
+
+    # Ship patrol X positions (matching keyframe stops)
+    ship_y = grid_y0 + 7 * step_y + 16
+    ship_positions = [120, 380, 690, 720, 450, 120]
+    ship_times = [0, 0.20, 0.45, 0.55, 0.75, 1.0]  # normalized
+
+    # Laser target positions
+    # Laser 1 fires from ship position ~690px to week 51 area
+    laser1_ship_x = 690
+    target1_col = min(51, num_weeks - 1)
+    target1_row = 6
+    target1_x = grid_x0 + target1_col * step_x + 5
+    target1_y = grid_y0 + target1_row * step_y + 5
+
+    # Laser 2 fires from ship position ~450px to mid-year area
+    laser2_ship_x = 450
+    target2_col = min(26, num_weeks - 1)
+    target2_row = 3
+    target2_x = grid_x0 + target2_col * step_x + 5
+    target2_y = grid_y0 + target2_row * step_y + 5
 
     svg_parts = []
     svg_parts.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="100%" height="100%">')
-    
+
     # Defs: filters, gradients, pixel sprites
     svg_parts.append("""  <defs>
     <!-- Laser Glow Filter -->
@@ -179,52 +211,9 @@ def generate_invaders_svg(days: list[dict], total_contribs: int, username: str =
     </g>
   </defs>""")
 
-    # Stylesheet with arcade scanlines, fonts, and dark/light support
+    # Stylesheet - static styles only, no @keyframes
     svg_parts.append("""  <style>
     /* <![CDATA[ */
-    @keyframes crt-flicker {
-      0%, 100% { opacity: 0.99; }
-      50% { opacity: 0.96; }
-    }
-    @keyframes ship-patrol {
-      0%   { transform: translateX(120px); }
-      20%  { transform: translateX(380px); }
-      45%  { transform: translateX(690px); }
-      55%  { transform: translateX(720px); }
-      75%  { transform: translateX(450px); }
-      100% { transform: translateX(120px); }
-    }
-    @keyframes laser-shot-1 {
-      0%   { transform: translate(710px, 205px); opacity: 0; }
-      1%   { opacity: 1; }
-      18%  { transform: translate(710px, 80px); opacity: 1; }
-      19%  { transform: translate(710px, 80px); opacity: 0; }
-      100% { transform: translate(710px, 80px); opacity: 0; }
-    }
-    @keyframes laser-shot-2 {
-      0%, 25% { transform: translate(450px, 205px); opacity: 0; }
-      26%  { opacity: 1; }
-      42%  { transform: translate(450px, 110px); opacity: 1; }
-      43%  { transform: translate(450px, 110px); opacity: 0; }
-      100% { transform: translate(450px, 110px); opacity: 0; }
-    }
-    @keyframes burst-pulse {
-      0%, 18% { transform: scale(0); opacity: 0; }
-      19% { transform: scale(1.6); opacity: 1; }
-      24% { transform: scale(2.2); opacity: 0; }
-      100% { transform: scale(0); opacity: 0; }
-    }
-    @keyframes score-pop {
-      0%, 18% { transform: translateY(0); opacity: 0; }
-      20% { transform: translateY(-4px); opacity: 1; }
-      26% { transform: translateY(-16px); opacity: 0; }
-      100% { transform: translateY(0); opacity: 0; }
-    }
-    @keyframes alien-march {
-      0%, 100% { transform: translateX(0); }
-      50% { transform: translateX(2px); }
-    }
-
     /* Typography and Palette */
     .arcade-font {
       font-family: ui-monospace, "Press Start 2P", "SF Mono", Monaco, Consolas, monospace;
@@ -244,7 +233,7 @@ def generate_invaders_svg(days: list[dict], total_contribs: int, username: str =
     .alien-3 { fill: #56d364; filter: url(#alien-glow); }
     .alien-4 { fill: #7ee787; filter: url(#alien-glow); }
     .grid-line { stroke: #1f242c; stroke-width: 0.5; stroke-dasharray: 2 2; }
-    .star-dot { fill: #ffffff; opacity: 0.25; }
+    .star-dot { fill: #ffffff; }
 
     /* Light Theme Adaptive Overrides */
     @media (prefers-color-scheme: light) {
@@ -261,14 +250,17 @@ def generate_invaders_svg(days: list[dict], total_contribs: int, username: str =
     svg_parts.append(f'  <rect class="bg-cabinet" x="1" y="1" width="{width-2}" height="{height-2}" rx="10"/>')
     svg_parts.append(f'  <rect class="bg-screen" x="14" y="14" width="{width-28}" height="{height-28}" rx="6"/>')
 
-    # Starfield Background
+    # Starfield Background with twinkling SMIL animation
     stars = [
         (45, 30), (120, 50), (280, 28), (420, 60), (580, 35), (730, 48), (810, 32),
         (90, 180), (220, 200), (350, 190), (520, 210), (640, 185), (790, 205),
         (160, 110), (310, 140), (480, 95), (670, 130), (760, 160)
     ]
-    for sx, sy in stars:
-        svg_parts.append(f'  <circle class="star-dot" cx="{sx}" cy="{sy}" r="1"/>')
+    for i, (sx, sy) in enumerate(stars):
+        base_opacity = 0.15 + (i % 5) * 0.06
+        svg_parts.append(f'  <circle class="star-dot" cx="{sx}" cy="{sy}" r="1" opacity="{base_opacity:.2f}">')
+        svg_parts.append(f'    <animate attributeName="opacity" values="{base_opacity:.2f};0.55;{base_opacity:.2f}" dur="{1.5 + (i % 7) * 0.4:.1f}s" repeatCount="indefinite"/>')
+        svg_parts.append('  </circle>')
 
     # Top Retro Arcade HUD
     svg_parts.append('  <g class="arcade-font">')
@@ -296,7 +288,9 @@ def generate_invaders_svg(days: list[dict], total_contribs: int, username: str =
     svg_parts.append(f'  <line x1="30" y1="64" x2="{width - 30}" y2="64" stroke="#30363d" stroke-width="1"/>')
 
     # Space Invaders Contribution Grid (53 Weeks x 7 Days)
-    svg_parts.append('  <g id="alien-fleet" style="animation: alien-march 2s ease-in-out infinite alternate">')
+    # Alien fleet with SMIL horizontal march
+    svg_parts.append('  <g id="alien-fleet">')
+    svg_parts.append('    <animateTransform attributeName="transform" type="translate" values="0,0;3,0;0,0;-3,0;0,0" dur="3s" repeatCount="indefinite"/>')
 
     day_labels = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"]
     for r in range(7):
@@ -338,42 +332,107 @@ def generate_invaders_svg(days: list[dict], total_contribs: int, username: str =
     track_y = grid_y0 + 7 * step_y + 16
     svg_parts.append(f'  <line x1="30" y1="{track_y + 18}" x2="{width - 30}" y2="{track_y + 18}" stroke="#238636" stroke-width="1.5" stroke-dasharray="4 4"/>')
 
-    # Animated Player Cannon (Galaga / Space Invaders Defender Ship)
-    # Ship patrols along the track beneath columns with active commits
-    svg_parts.append(f'  <g id="cannon-patrol" style="animation: ship-patrol 10s ease-in-out infinite">')
-    svg_parts.append(f'    <g transform="translate(0, {track_y:.1f})">')
-    svg_parts.append('      <use href="#player-ship"/>')
-    svg_parts.append('    </g>')
+    # ─── Animated Player Cannon Ship (SMIL patrol) ───
+    # Build keyTimes and values for smooth patrol
+    ship_key_times = ";".join(f"{t:.2f}" for t in ship_times)
+    ship_x_values = ";".join(str(x) for x in ship_positions)
+
+    svg_parts.append(f'  <g id="cannon-patrol">')
+    svg_parts.append(f'    <animateTransform attributeName="transform" type="translate"')
+    svg_parts.append(f'      values="{ship_positions[0]} {ship_y};{ship_positions[1]} {ship_y};{ship_positions[2]} {ship_y};{ship_positions[3]} {ship_y};{ship_positions[4]} {ship_y};{ship_positions[5]} {ship_y}"')
+    svg_parts.append(f'      keyTimes="{ship_key_times}"')
+    svg_parts.append(f'      dur="{cycle}s" repeatCount="indefinite" calcMode="spline"')
+    svg_parts.append(f'      keySplines="0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1"/>')
+    svg_parts.append('    <use href="#player-ship"/>')
     svg_parts.append('  </g>')
 
-    # Dynamic Dual Laser Blasts firing up at target blocks
-    # Laser 1: Fires at recent week target (e.g. week 51, row 6)
-    svg_parts.append('  <g style="animation: laser-shot-1 4.5s ease-out infinite">')
+    # ─── LASER SHOT 1 ───
+    # Twin laser beams fire from ship at position ~690 up to target1
+    laser1_x = laser1_ship_x + 8  # center on ship cannon
+    svg_parts.append(f'  <g id="laser-1" opacity="0">')
+    # Visibility: appear at laser1_start, disappear after travel
+    svg_parts.append(f'    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;{laser1_start/cycle:.3f};{(laser1_start+0.05)/cycle:.3f};{(laser1_start+laser1_dur)/cycle:.3f};{(laser1_start+laser1_dur+0.05)/cycle:.3f};1" dur="{cycle}s" repeatCount="indefinite"/>')
+    # Vertical movement: descend from ship_y up to target1_y
+    svg_parts.append(f'    <animateTransform attributeName="transform" type="translate"')
+    svg_parts.append(f'      values="{laser1_x} {ship_y};{laser1_x} {ship_y};{laser1_x} {ship_y};{laser1_x} {target1_y};{laser1_x} {target1_y};{laser1_x} {ship_y}"')
+    svg_parts.append(f'      keyTimes="0;{laser1_start/cycle:.3f};{(laser1_start+0.05)/cycle:.3f};{(laser1_start+laser1_dur)/cycle:.3f};{(laser1_start+laser1_dur+0.05)/cycle:.3f};1"')
+    svg_parts.append(f'      dur="{cycle}s" repeatCount="indefinite"/>')
+    # Laser beam lines (drawn at origin, positioned by animateTransform)
     svg_parts.append('    <line x1="0" y1="0" x2="0" y2="16" stroke="#58a6ff" stroke-width="2.5" stroke-linecap="round" filter="url(#laser-glow)"/>')
     svg_parts.append('    <line x1="8" y1="0" x2="8" y2="16" stroke="#39d353" stroke-width="2.5" stroke-linecap="round" filter="url(#laser-glow)"/>')
     svg_parts.append('  </g>')
 
-    # Laser 2: Fires at mid-year target
-    svg_parts.append('  <g style="animation: laser-shot-2 4.5s ease-out infinite">')
+    # ─── LASER SHOT 2 ───
+    laser2_x = laser2_ship_x + 8
+    svg_parts.append(f'  <g id="laser-2" opacity="0">')
+    svg_parts.append(f'    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;{laser2_start/cycle:.3f};{(laser2_start+0.05)/cycle:.3f};{(laser2_start+laser2_dur)/cycle:.3f};{(laser2_start+laser2_dur+0.05)/cycle:.3f};1" dur="{cycle}s" repeatCount="indefinite"/>')
+    svg_parts.append(f'    <animateTransform attributeName="transform" type="translate"')
+    svg_parts.append(f'      values="{laser2_x} {ship_y};{laser2_x} {ship_y};{laser2_x} {ship_y};{laser2_x} {target2_y};{laser2_x} {target2_y};{laser2_x} {ship_y}"')
+    svg_parts.append(f'      keyTimes="0;{laser2_start/cycle:.3f};{(laser2_start+0.05)/cycle:.3f};{(laser2_start+laser2_dur)/cycle:.3f};{(laser2_start+laser2_dur+0.05)/cycle:.3f};1"')
+    svg_parts.append(f'      dur="{cycle}s" repeatCount="indefinite"/>')
     svg_parts.append('    <line x1="0" y1="0" x2="0" y2="16" stroke="#ff7b72" stroke-width="2.5" stroke-linecap="round" filter="url(#laser-glow)"/>')
     svg_parts.append('    <line x1="8" y1="0" x2="8" y2="16" stroke="#f2cc60" stroke-width="2.5" stroke-linecap="round" filter="url(#laser-glow)"/>')
     svg_parts.append('  </g>')
 
-    # Particle Hit Burst at Target 1 (week 51 peak day)
-    target1_x = grid_x0 + 51 * step_x + 5
-    target1_y = grid_y0 + 6 * step_y + 5
-    svg_parts.append(f'  <g transform="translate({target1_x:.1f}, {target1_y:.1f})">')
-    svg_parts.append('    <!-- Explosion Starburst -->')
-    svg_parts.append('    <g style="animation: burst-pulse 4.5s ease-out infinite">')
+    # ─── EXPLOSION BURST at Target 1 ───
+    burst1_start = laser1_start + laser1_dur
+    svg_parts.append(f'  <g transform="translate({target1_x:.1f}, {target1_y:.1f})" opacity="0">')
+    svg_parts.append(f'    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;{burst1_start/cycle:.3f};{(burst1_start+0.1)/cycle:.3f};{(burst1_start+burst_dur)/cycle:.3f};1" dur="{cycle}s" repeatCount="indefinite"/>')
+    # Starburst explosion
+    svg_parts.append('    <g>')
+    svg_parts.append(f'      <animateTransform attributeName="transform" type="scale" values="0.5;1.8;2.2;0.5" keyTimes="0;0.3;0.7;1" dur="{burst_dur}s" begin="{burst1_start}s" repeatCount="indefinite" additive="sum"/>')
     svg_parts.append('      <circle r="4" fill="#39d353" filter="url(#laser-glow)"/>')
     svg_parts.append('      <line x1="-8" y1="-8" x2="8" y2="8" stroke="#f2cc60" stroke-width="1.5"/>')
     svg_parts.append('      <line x1="-8" y1="8" x2="8" y2="-8" stroke="#f2cc60" stroke-width="1.5"/>')
     svg_parts.append('      <line x1="0" y1="-10" x2="0" y2="10" stroke="#ff7b72" stroke-width="1.5"/>')
+    svg_parts.append('      <line x1="-10" y1="0" x2="10" y2="0" stroke="#58a6ff" stroke-width="1.5"/>')
     svg_parts.append('    </g>')
-    svg_parts.append('    <!-- Floating Arcade Score Popup -->')
-    svg_parts.append('    <g style="animation: score-pop 4.5s ease-out infinite">')
-    svg_parts.append(f'      <text x="0" y="-8" text-anchor="middle" font-size="10" font-weight="700" fill="#f2cc60" class="arcade-font">+{max_day * 100}</text>')
+    svg_parts.append('  </g>')
+
+    # ─── FLOATING SCORE POPUP at Target 1 ───
+    score_start = burst1_start + 0.1
+    svg_parts.append(f'  <text x="{target1_x:.1f}" y="{target1_y - 8:.1f}" text-anchor="middle" font-size="10" font-weight="700" fill="#f2cc60" class="arcade-font" opacity="0">')
+    svg_parts.append(f'    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;{score_start/cycle:.3f};{(score_start+0.15)/cycle:.3f};{(score_start+score_dur)/cycle:.3f};1" dur="{cycle}s" repeatCount="indefinite"/>')
+    svg_parts.append(f'    <animateTransform attributeName="transform" type="translate" values="0 0;0 0;0 -4;0 -20;0 0" keyTimes="0;{score_start/cycle:.3f};{(score_start+0.15)/cycle:.3f};{(score_start+score_dur)/cycle:.3f};1" dur="{cycle}s" repeatCount="indefinite"/>')
+    svg_parts.append(f'    +{max_day * 100}')
+    svg_parts.append('  </text>')
+
+    # ─── EXPLOSION BURST at Target 2 ───
+    burst2_start = laser2_start + laser2_dur
+    svg_parts.append(f'  <g transform="translate({target2_x:.1f}, {target2_y:.1f})" opacity="0">')
+    svg_parts.append(f'    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;{burst2_start/cycle:.3f};{(burst2_start+0.1)/cycle:.3f};{(burst2_start+burst_dur)/cycle:.3f};1" dur="{cycle}s" repeatCount="indefinite"/>')
+    svg_parts.append('    <g>')
+    svg_parts.append(f'      <animateTransform attributeName="transform" type="scale" values="0.5;1.8;2.2;0.5" keyTimes="0;0.3;0.7;1" dur="{burst_dur}s" begin="{burst2_start}s" repeatCount="indefinite" additive="sum"/>')
+    svg_parts.append('      <circle r="4" fill="#ff7b72" filter="url(#laser-glow)"/>')
+    svg_parts.append('      <line x1="-8" y1="-8" x2="8" y2="8" stroke="#f2cc60" stroke-width="1.5"/>')
+    svg_parts.append('      <line x1="-8" y1="8" x2="8" y2="-8" stroke="#f2cc60" stroke-width="1.5"/>')
+    svg_parts.append('      <line x1="0" y1="-10" x2="0" y2="10" stroke="#39d353" stroke-width="1.5"/>')
+    svg_parts.append('      <line x1="-10" y1="0" x2="10" y2="0" stroke="#58a6ff" stroke-width="1.5"/>')
     svg_parts.append('    </g>')
+    svg_parts.append('  </g>')
+
+    # ─── FLOATING SCORE POPUP at Target 2 ───
+    score2_start = burst2_start + 0.1
+    active_days = [d for d in days if d["count"] > 0]
+    mid_score = active_days[len(active_days) // 2]["count"] * 100 if active_days else 500
+    svg_parts.append(f'  <text x="{target2_x:.1f}" y="{target2_y - 8:.1f}" text-anchor="middle" font-size="10" font-weight="700" fill="#f2cc60" class="arcade-font" opacity="0">')
+    svg_parts.append(f'    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;{score2_start/cycle:.3f};{(score2_start+0.15)/cycle:.3f};{(score2_start+score_dur)/cycle:.3f};1" dur="{cycle}s" repeatCount="indefinite"/>')
+    svg_parts.append(f'    <animateTransform attributeName="transform" type="translate" values="0 0;0 0;0 -4;0 -20;0 0" keyTimes="0;{score2_start/cycle:.3f};{(score2_start+0.15)/cycle:.3f};{(score2_start+score_dur)/cycle:.3f};1" dur="{cycle}s" repeatCount="indefinite"/>')
+    svg_parts.append(f'    +{mid_score}')
+    svg_parts.append('  </text>')
+
+    # ─── Thruster Glow on Player Ship ───
+    # Pulsing engine glow at the bottom of the ship
+    svg_parts.append(f'  <g id="thruster-glow">')
+    svg_parts.append(f'    <animateTransform attributeName="transform" type="translate"')
+    svg_parts.append(f'      values="{ship_positions[0]} {ship_y};{ship_positions[1]} {ship_y};{ship_positions[2]} {ship_y};{ship_positions[3]} {ship_y};{ship_positions[4]} {ship_y};{ship_positions[5]} {ship_y}"')
+    svg_parts.append(f'      keyTimes="{ship_key_times}"')
+    svg_parts.append(f'      dur="{cycle}s" repeatCount="indefinite" calcMode="spline"')
+    svg_parts.append(f'      keySplines="0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1"/>')
+    svg_parts.append('    <ellipse cx="12" cy="18" rx="6" ry="2" fill="#ff7b72" opacity="0.6">')
+    svg_parts.append('      <animate attributeName="ry" values="2;4;2" dur="0.5s" repeatCount="indefinite"/>')
+    svg_parts.append('      <animate attributeName="opacity" values="0.6;0.9;0.6" dur="0.5s" repeatCount="indefinite"/>')
+    svg_parts.append('    </ellipse>')
     svg_parts.append('  </g>')
 
     # Bottom Status Bar & Credits
