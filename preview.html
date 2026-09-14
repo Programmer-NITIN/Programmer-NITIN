@@ -124,7 +124,7 @@
 
   <h2>contribution metrics (animated 3D isometric calendar &amp; languages) <button id="replay-calendar">replay building animation</button></h2>
   <div class="row">
-    <div class="card">
+    <div class="card" id="calendar-card">
       <span class="tag">assets/metrics.isocalendar.svg (real GitHub contributions with 3D building animation)</span>
       <img id="calendar-img" src="assets/metrics.isocalendar.svg" width="600" alt="Isometric Calendar">
     </div>
@@ -141,12 +141,38 @@
       });
     };
 
-    document.getElementById('replay-calendar').onclick = () => {
+    const replayCal = () => {
       const cal = document.getElementById('calendar-img');
       if (cal) {
         cal.src = 'assets/metrics.isocalendar.svg?' + Date.now();
       }
     };
+
+    document.getElementById('replay-calendar').onclick = replayCal;
+
+    // Scroll-triggered smooth animation: plays whenever user scrolls till this part
+    let lastCalPlay = 0;
+    let calTimer = null;
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const now = Date.now();
+          if (now - lastCalPlay > 3000) {
+            lastCalPlay = now;
+            clearTimeout(calTimer);
+            // Brief 120ms pause after scrolling into view so user's eyes focus on the grid
+            calTimer = setTimeout(() => {
+              replayCal();
+            }, 120);
+          }
+        }
+      });
+    }, { threshold: 0.25 });
+
+    const card = document.getElementById('calendar-card');
+    if (card) {
+      observer.observe(card);
+    }
   </script>
 </body>
 </html>

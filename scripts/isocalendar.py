@@ -156,9 +156,10 @@ def generate_isocalendar_svg(
     palette_name: str = "github",
     height_mult: float = 1.0,
     animate: bool = True,
-    duration: float = 0.9,
-    stagger: float = 0.018,
-    loop: bool = False,
+    duration: float = 2.2,
+    stagger: float = 0.035,
+    loop: bool = True,
+    hold: float = 4.5,
 ) -> str:
     """Generates the seamless 3D animated isometric contribution calendar SVG."""
     weeks: dict[int, list[dict]] = {}
@@ -306,10 +307,20 @@ def generate_isocalendar_svg(
 
                 svg_parts.append(f'                            <g transform="translate({j * -1.7:.1f}, {y_pos:.2f})">')
                 if animate:
-                    anim_repeat = 'repeatCount="indefinite"' if loop else 'fill="freeze"'
                     delay = round(col_idx * stagger, 3)
                     svg_parts.append('                                <g>')
-                    svg_parts.append(f'                                  <animateTransform attributeName="transform" type="translate" values="0,{h}; 0,0" begin="{delay}s" dur="{duration}s" {anim_repeat} calcMode="spline" keyTimes="0;1" keySplines="0.16 1 0.3 1"/>')
+                    if loop:
+                        lower_time = 1.0
+                        total_dur = round(duration + hold + lower_time, 2)
+                        t1 = round(duration / total_dur, 3)
+                        t2 = round((duration + hold) / total_dur, 3)
+                        key_times = f"0; {t1}; {t2}; 1"
+                        key_splines = "0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"
+                        anim_values = f"0,{h}; 0,0; 0,0; 0,{h}"
+                        svg_parts.append(f'                                  <animateTransform attributeName="transform" type="translate" values="{anim_values}" begin="{delay}s" dur="{total_dur}s" repeatCount="indefinite" calcMode="spline" keyTimes="{key_times}" keySplines="{key_splines}"/>')
+                    else:
+                        svg_parts.append(f'                                  <animateTransform attributeName="transform" type="translate" values="0,{h}; 0,0" begin="{delay}s" dur="{duration}s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.16 1 0.3 1"/>')
+
                     svg_parts.append(f'                                  <path class="{cls_name}" d="M1.7,2 0,1 1.7,0 3.4,1 z" />')
                     svg_parts.append(f'                                  <path class="{cls_name}" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,{2.0 + h:.2f} 0,{1.0 + h:.2f} z" />')
                     svg_parts.append(f'                                  <path class="{cls_name}" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,{1.0 + h:.2f} 1.7,{2.0 + h:.2f} z" />')
@@ -338,10 +349,12 @@ def main():
     parser.add_argument("--config", default="assets/calendar.json", help="Path to config JSON")
     parser.add_argument("-o", "--out", default="assets/metrics.isocalendar.svg", help="Output SVG path")
     parser.add_argument("--height", type=float, default=None, help="Height multiplier for 3D buildings")
-    parser.add_argument("--duration", type=float, default=None, help="Animation duration in seconds")
-    parser.add_argument("--stagger", type=float, default=None, help="Animation stagger delay per week in seconds")
+    parser.add_argument("--duration", type=float, default=None, help="Animation rise duration in seconds (e.g. 2.2)")
+    parser.add_argument("--stagger", type=float, default=None, help="Animation stagger delay per week in seconds (e.g. 0.035)")
+    parser.add_argument("--hold", type=float, default=None, help="Hold duration at peak in seconds (e.g. 4.5)")
     parser.add_argument("--palette", choices=list(PALETTES.keys()), default=None, help="Color palette")
-    parser.add_argument("--loop", action="store_true", help="Loop animation infinitely")
+    parser.add_argument("--loop", action="store_true", default=None, help="Loop animation with comfortable hold")
+    parser.add_argument("--no-loop", action="store_true", help="Play once and freeze at peak")
     parser.add_argument("--no-anim", action="store_true", help="Disable building animation")
 
     args = parser.parse_args()
@@ -358,9 +371,17 @@ def main():
     username = args.user or cfg.get("username", "Programmer-NITIN")
     anim_cfg = cfg.get("animation", {})
     animate = False if args.no_anim else anim_cfg.get("enabled", True)
-    duration = args.duration or anim_cfg.get("duration", 0.9)
-    stagger = args.stagger or anim_cfg.get("stagger", 0.018)
-    loop = args.loop or anim_cfg.get("loop", False)
+    duration = args.duration or anim_cfg.get("duration", 2.2)
+    stagger = args.stagger or anim_cfg.get("stagger", 0.035)
+    hold = args.hold or anim_cfg.get("hold", 4.5)
+
+    if args.no_loop:
+        loop = False
+    elif args.loop is True:
+        loop = True
+    else:
+        loop = anim_cfg.get("loop", True)
+
     height_mult = args.height or cfg.get("height_multiplier", 1.0)
     palette_name = args.palette or cfg.get("palette", "github")
 
@@ -398,6 +419,7 @@ def main():
         duration=duration,
         stagger=stagger,
         loop=loop,
+        hold=hold,
     )
 
     out_path = Path(args.out)
