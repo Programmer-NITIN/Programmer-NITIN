@@ -59,7 +59,14 @@ if ($Image -and (Test-Path (Join-Path $root $Image))) {
     $dotArgs += '--reveal'
     python @dotArgs
 } else {
-    Write-Host "`n[2/3] no image found at $Image, skipping the portrait" -ForegroundColor DarkGray
+    Write-Host "`n[2/4] no image found at $Image, skipping the portrait" -ForegroundColor DarkGray
 }
 
-Write-Host "`n[3/3] done. Open preview.html to check assets, then read SETUP.md to push to GitHub!`n" -ForegroundColor Green
+Write-Host "`n[3/4] generating 3D animated isometric contribution calendar" -ForegroundColor Cyan
+try {
+    python (Join-Path $root 'scripts\isocalendar.py') --user $Username --config (Join-Path $root 'assets\calendar.json') -o (Join-Path $root 'assets\metrics.isocalendar.svg')
+} catch {
+    Write-Warning "isocalendar generation failed: $_"
+}
+
+Write-Host "`n[4/4] done. Open preview.html to check assets, then push to GitHub!`n" -ForegroundColor Green

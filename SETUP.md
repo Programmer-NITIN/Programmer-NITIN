@@ -78,5 +78,23 @@ python scripts/radar.py --github Programmer-NITIN -o assets/radar-langs --values
 python scripts/cards.py --user Programmer-NITIN --projects assets/projects.json --out assets
 ```
 
+### Regenerate & Tune 3D Animated Isometric Calendar
+Adjust building height, animation speed, color themes, and streaks in `assets/calendar.json`, or run via CLI:
+
+```powershell
+# Default settings using assets/calendar.json
+python scripts/isocalendar.py
+
+# Custom building height (e.g. taller skyscrapers 2.0x) and fast 0.8s animation
+python scripts/isocalendar.py --height 2.0 --duration 0.8 --stagger 0.015
+
+# Different palettes (github, emerald, halloween, winter, cyberpunk)
+python scripts/isocalendar.py --palette emerald
+
+# Infinite wave animation loop
+python scripts/isocalendar.py --loop
+```
+
 ### Local Preview
-Open `preview.html` in your browser at any time to visually check all dark & light assets!
+Open `preview.html` in your browser at any time to visually check all dark & light assets and click **replay building animation**!
+
