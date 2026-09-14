@@ -1,0 +1,19 @@
+{
+  "_comment": "Configuration for Space Invaders Contribution Defense SVG. Run 'python scripts/invaders.py' to regenerate assets/invaders.svg",
+  "username": "Programmer-NITIN",
+  "ship": {
+    "color": "#39d353",
+    "accent": "#58a6ff",
+    "speed": "normal"
+  },
+  "lasers": {
+    "color": "#58a6ff",
+    "glow": true
+  },
+  "hud": {
+    "title": "SPACE INVADERS // COMMIT DEFENSE",
+    "lives": 3,
+    "show_score": true
+  },
+  "palette": "arcade"
+}

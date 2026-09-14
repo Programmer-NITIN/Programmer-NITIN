@@ -52,9 +52,8 @@ The `lowlighter/metrics` workflow requires a personal access token to render the
 ## 4. Run Workflows
 
 In your repo, go to the **Actions** tab:
-1. **Metrics** → Click **Run workflow** (generates 3D isometric calendar, languages, achievements)
-2. **Snake** → Click **Run workflow** (generates snake eating contribution graph into `output` branch)
-3. **Charts and cards** → Click **Run workflow** (refreshes radar charts & repo cards)
+1. **Charts and cards** → Generates radar charts, project cards, 3D animated isocalendar, and the **Retro Space Invaders** arcade defense visualizer automatically (runs daily at 03:30 UTC or on demand).
+2. **Metrics** → Generates coding habits, languages, and achievements badges (runs automatically when `METRICS_TOKEN` secret is configured).
 
 ---
 

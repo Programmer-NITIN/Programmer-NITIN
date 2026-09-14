@@ -98,12 +98,8 @@ Hi, I'm **Nitin Patidar**. I'm an AI Developer and Full Stack Engineer obsessed 
 
 <br><br>
 
-<!-- Snake eats the contribution graph - .github/workflows/snake.yml -->
-<picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/Programmer-NITIN/Programmer-NITIN/output/snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Programmer-NITIN/Programmer-NITIN/output/snake.svg">
-  <img src="https://raw.githubusercontent.com/Programmer-NITIN/Programmer-NITIN/output/snake.svg" width="100%" alt="snake eating the contribution graph">
-</picture>
+<!-- Retro Space Invaders Contribution Defense - .github/workflows/radar.yml -->
+<img src="assets/invaders.svg" width="95%" alt="Space Invaders Contribution Defense">
 
 </div>
 
