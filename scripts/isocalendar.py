@@ -74,30 +74,31 @@ def fetch_contributions_html(username: str) -> tuple[list[dict], int]:
     )
     total_contribs = int(total_m.group(1).replace(",", "")) if total_m else 0
 
-    pattern = (
-        r'id="contribution-day-component-(\d+)-(\d+)"[^>]*'
-        r'data-date="(\d{4}-\d{2}-\d{2})"[^>]*data-level="(\d+)"'
-    )
-    matches = re.findall(pattern, html)
-    if not matches:
-        pattern = (
-            r'data-date="(\d{4}-\d{2}-\d{2})"[^>]*'
-            r'id="contribution-day-component-(\d+)-(\d+)"[^>]*data-level="(\d+)"'
-        )
-        alt = re.findall(pattern, html)
-        matches = [(m[1], m[2], m[0], m[3]) for m in alt]
-
-    tooltip_pat = r'id="contribution-day-component-(\d+)-(\d+)-tool-tip"[^>]*>([^<]+)'
-    tooltip_matches = re.findall(tooltip_pat, html)
+    # Parse counts from tooltips
+    # Format: for="contribution-day-component-{row}-{col}"
+    # where row = day of week (0 to 6), col = week index (0 to 52)
     counts_map = {}
-    for col, row, tip in tooltip_matches:
-        m = re.search(r"^(\d+)\s+contribution", tip.strip())
-        counts_map[(int(col), int(row))] = int(m.group(1)) if m else 0
+    tip_matches = re.findall(r'for="contribution-day-component-(\d+)-(\d+)"[^>]*>([^<]+)', html)
+    if not tip_matches:
+        tip_matches = re.findall(r'id="contribution-day-component-(\d+)-(\d+)-tool-tip"[^>]*>([^<]+)', html)
+    for r_str, c_str, text in tip_matches:
+        m = re.search(r"^(\d+)\s+contribution", text.strip())
+        cnt = int(m.group(1)) if m else 0
+        counts_map[(int(c_str), int(r_str))] = cnt
+
+    # Parse days: row (day of week: 0-6), col (week: 0-52)
+    alt_pat = r'data-date="(\d{4}-\d{2}-\d{2})"[^>]*id="contribution-day-component-(\d+)-(\d+)"[^>]*data-level="(\d+)"'
+    matches = re.findall(alt_pat, html)
+    if not matches:
+        pattern = r'id="contribution-day-component-(\d+)-(\d+)"[^>]*data-date="(\d{4}-\d{2}-\d{2})"[^>]*data-level="(\d+)"'
+        raw = re.findall(pattern, html)
+        matches = [(m[2], m[0], m[1], m[3]) for m in raw]
 
     days = []
-    for col_str, row_str, date_str, level_str in matches:
-        c, r = int(col_str), int(row_str)
-        lvl = int(level_str)
+    for date_str, r_str, c_str, lvl_str in matches:
+        r = int(r_str)
+        c = int(c_str)
+        lvl = int(lvl_str)
         cnt = counts_map.get((c, r), lvl * 2 if lvl > 0 else 0)
         days.append(
             {
@@ -109,7 +110,9 @@ def fetch_contributions_html(username: str) -> tuple[list[dict], int]:
             }
         )
 
-    days.sort(key=lambda d: (d["col"], d["row"]))
+    days.sort(key=lambda d: d["date"])
+    if total_contribs == 0:
+        total_contribs = sum(d["count"] for d in days)
     return days, total_contribs
 
 
@@ -158,37 +161,55 @@ def generate_isocalendar_svg(
     loop: bool = False,
 ) -> str:
     """Generates the seamless 3D animated isometric contribution calendar SVG."""
-    palette = PALETTES.get(palette_name, PALETTES["github"])
-    level_colors = {
-        0: palette["empty"],
-        1: palette["L1"],
-        2: palette["L2"],
-        3: palette["L3"],
-        4: palette["L4"],
-    }
-
     weeks: dict[int, list[dict]] = {}
     for d in days:
         weeks.setdefault(d["col"], []).append(d)
 
     num_weeks = max(weeks.keys()) + 1 if weeks else 53
+    size = 6.0 * height_mult
+    reference = max((d["count"] for d in days), default=1) or 1
+
+    is_adaptive = palette_name in ("github", "auto", None)
+    palette = PALETTES.get(palette_name, PALETTES["github"])
 
     svg_parts = []
-    svg_parts.append('<svg xmlns="http://www.w3.org/2000/svg" width="480" height="330" class="">')
-    svg_parts.append('    <defs>')
-    svg_parts.append('    </defs>')
-    svg_parts.append("""    <style>
-svg { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; color: #777; }
-h2, h3 { margin: 8px 0 2px; padding: 0; color: #0366d6; font-weight: 400; }
-h2 svg, h3 svg { fill: currentColor; }
-h2 { font-size: 16px; }
-h3, svg { font-size: 14px; }
-section > .field { margin-left: 5px; margin-right: 5px; }
-.field { display: flex; align-items: center; margin-bottom: 2px; white-space: nowrap; }
-.field svg { margin: 0 8px; fill: #959da5; flex-shrink: 0; }
-.row { display: flex; flex-wrap: wrap; }
-.row section { flex: 1 1 0; }
-</style>""")
+    svg_parts.append('<svg xmlns="http://www.w3.org/2000/svg" width="480" height="330">')
+    svg_parts.append('    <style>')
+    svg_parts.append('svg { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; color: #777; }')
+    svg_parts.append('h2, h3 { margin: 8px 0 2px; padding: 0; color: #0366d6; font-weight: 400; }')
+    svg_parts.append('h2 svg, h3 svg { fill: currentColor; }')
+    svg_parts.append('h2 { font-size: 16px; }')
+    svg_parts.append('h3, svg { font-size: 14px; }')
+    svg_parts.append('section > .field { margin-left: 5px; margin-right: 5px; }')
+    svg_parts.append('.field { display: flex; align-items: center; margin-bottom: 2px; white-space: nowrap; }')
+    svg_parts.append('.field svg { margin: 0 8px; fill: #959da5; flex-shrink: 0; }')
+    svg_parts.append('.row { display: flex; flex-wrap: wrap; }')
+    svg_parts.append('.row section { flex: 1 1 0; }')
+
+    if is_adaptive:
+        svg_parts.append('.c-empty { fill: #ebedf0; }')
+        svg_parts.append('.c-l1 { fill: #9be9a8; }')
+        svg_parts.append('.c-l2 { fill: #40c463; }')
+        svg_parts.append('.c-l3 { fill: #30a14e; }')
+        svg_parts.append('.c-l4 { fill: #216e39; }')
+        svg_parts.append('@media (prefers-color-scheme: dark) {')
+        svg_parts.append('  svg { color: #8b949e; }')
+        svg_parts.append('  h2, h3 { color: #58a6ff; }')
+        svg_parts.append('  .field svg { fill: #8b949e; }')
+        svg_parts.append('  .c-empty { fill: #161b22; }')
+        svg_parts.append('  .c-l1 { fill: #0e4429; }')
+        svg_parts.append('  .c-l2 { fill: #006d32; }')
+        svg_parts.append('  .c-l3 { fill: #26a641; }')
+        svg_parts.append('  .c-l4 { fill: #39d353; }')
+        svg_parts.append('}')
+    else:
+        svg_parts.append(f'.c-empty {{ fill: {palette["empty"]}; }}')
+        svg_parts.append(f'.c-l1 {{ fill: {palette["L1"]}; }}')
+        svg_parts.append(f'.c-l2 {{ fill: {palette["L2"]}; }}')
+        svg_parts.append(f'.c-l3 {{ fill: {palette["L3"]}; }}')
+        svg_parts.append(f'.c-l4 {{ fill: {palette["L4"]}; }}')
+
+    svg_parts.append('    </style>')
     svg_parts.append('    <foreignObject x="0" y="0" width="100%" height="100%">')
     svg_parts.append('        <div xmlns="http://www.w3.org/1999/xhtml" class="items-wrapper">')
     svg_parts.append('            <section>')
@@ -258,60 +279,45 @@ section > .field { margin-left: 5px; margin-right: 5px; }
     svg_parts.append('                    </filter>')
     svg_parts.append('                    <g transform="scale(4) translate(12, 0)">')
 
-    # Render week by week using EXACT seamless geometry:
-    # Week spacing: (1.7 * w, 1.0 * w)
-    # Day spacing:  (-1.7 * d, 6.0 + 1.0 * d)
     for col_idx in range(num_weeks):
-        col_days = weeks.get(col_idx, [])
+        col_days = sorted(weeks.get(col_idx, []), key=lambda x: x["row"])
         w_x = col_idx * 1.7
         w_y = col_idx * 1.0
         svg_parts.append(f'                        <g transform="translate({w_x:.1f}, {w_y:.1f})">')
 
         for d in col_days:
-            row_idx = d["row"]
+            j = d["row"]
             lvl = d["level"]
             cnt = d["count"]
-
-            base_dx = -1.7 * row_idx
-            base_dy = 6.0 + 1.0 * row_idx
+            cls_name = f"c-l{lvl}" if lvl > 0 else "c-empty"
 
             if lvl == 0:
-                # Flat empty ground tile (seamless)
-                svg_parts.append(f'                            <g transform="translate({base_dx:.1f}, {base_dy:.1f})">')
-                svg_parts.append(f'                                <path fill="{palette["empty"]}" d="M1.7,2 0,1 1.7,0 3.4,1 z"/>')
-                svg_parts.append(f'                                <path fill="{palette["empty"]}" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z"/>')
-                svg_parts.append(f'                                <path fill="{palette["empty"]}" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z"/>')
+                y_pos = j + size
+                svg_parts.append(f'                            <g transform="translate({j * -1.7:.1f}, {y_pos:.2f})">')
+                svg_parts.append(f'                                <path class="{cls_name}" d="M1.7,2 0,1 1.7,0 3.4,1 z" />')
+                svg_parts.append(f'                                <path class="{cls_name}" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />')
+                svg_parts.append(f'                                <path class="{cls_name}" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />')
                 svg_parts.append('                            </g>')
             else:
-                # Active 3D building block
-                # Standard heights matching original metrics isocalendar
-                if lvl == 1:
-                    base_h = 0.3 + 0.3 * min(cnt, 2)
-                elif lvl == 2:
-                    base_h = 0.9 + 0.3 * min(cnt, 3)
-                elif lvl == 3:
-                    base_h = 1.8 + 0.4 * min(cnt, 4)
-                else:  # lvl 4
-                    base_h = 3.0 + 0.5 * min(cnt, 6)
+                base_tier = lvl / 4.0
+                ratio = min(1.0, base_tier * 0.75 + (cnt / reference) * 0.25)
+                h = round(ratio * size, 2)
+                y_pos = round(j + (1.0 - ratio) * size, 2)
 
-                h = round(base_h * height_mult, 2)
-                col_color = level_colors[lvl]
-                top_dy = round(base_dy - h, 2)
-
-                svg_parts.append(f'                            <g transform="translate({base_dx:.1f}, {top_dy:.2f})">')
+                svg_parts.append(f'                            <g transform="translate({j * -1.7:.1f}, {y_pos:.2f})">')
                 if animate:
                     anim_repeat = 'repeatCount="indefinite"' if loop else 'fill="freeze"'
                     delay = round(col_idx * stagger, 3)
-                    svg_parts.append(f'                                <g>')
+                    svg_parts.append('                                <g>')
                     svg_parts.append(f'                                  <animateTransform attributeName="transform" type="translate" values="0,{h}; 0,0" begin="{delay}s" dur="{duration}s" {anim_repeat} calcMode="spline" keyTimes="0;1" keySplines="0.16 1 0.3 1"/>')
-                    svg_parts.append(f'                                  <path fill="{col_color}" d="M1.7,2 0,1 1.7,0 3.4,1 z"/>')
-                    svg_parts.append(f'                                  <path fill="{col_color}" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,{2.0 + h:.2f} 0,{1.0 + h:.2f} z"/>')
-                    svg_parts.append(f'                                  <path fill="{col_color}" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,{1.0 + h:.2f} 1.7,{2.0 + h:.2f} z"/>')
-                    svg_parts.append(f'                                </g>')
+                    svg_parts.append(f'                                  <path class="{cls_name}" d="M1.7,2 0,1 1.7,0 3.4,1 z" />')
+                    svg_parts.append(f'                                  <path class="{cls_name}" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,{2.0 + h:.2f} 0,{1.0 + h:.2f} z" />')
+                    svg_parts.append(f'                                  <path class="{cls_name}" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,{1.0 + h:.2f} 1.7,{2.0 + h:.2f} z" />')
+                    svg_parts.append('                                </g>')
                 else:
-                    svg_parts.append(f'                                <path fill="{col_color}" d="M1.7,2 0,1 1.7,0 3.4,1 z"/>')
-                    svg_parts.append(f'                                <path fill="{col_color}" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,{2.0 + h:.2f} 0,{1.0 + h:.2f} z"/>')
-                    svg_parts.append(f'                                <path fill="{col_color}" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,{1.0 + h:.2f} 1.7,{2.0 + h:.2f} z"/>')
+                    svg_parts.append(f'                                <path class="{cls_name}" d="M1.7,2 0,1 1.7,0 3.4,1 z" />')
+                    svg_parts.append(f'                                <path class="{cls_name}" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,{2.0 + h:.2f} 0,{1.0 + h:.2f} z" />')
+                    svg_parts.append(f'                                <path class="{cls_name}" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,{1.0 + h:.2f} 1.7,{2.0 + h:.2f} z" />')
 
                 svg_parts.append('                            </g>')
 

@@ -5,22 +5,29 @@ on:
     # every 6 hours
     - cron: "0 */6 * * *"
   workflow_dispatch:
-  push:
-    branches: [main]
 
 permissions:
   contents: write
 
 jobs:
   metrics:
-    # Only run if METRICS_TOKEN secret is configured in the repository
-    if: ${{ secrets.METRICS_TOKEN != '' }}
     runs-on: ubuntu-latest
     steps:
+      - name: Check token
+        id: check_token
+        run: |
+          if [ -z "${{ secrets.METRICS_TOKEN }}" ]; then
+            echo "has_token=false" >> "$GITHUB_OUTPUT"
+            echo "Notice: METRICS_TOKEN secret is not configured yet. Skipping lowlighter/metrics generation."
+          else
+            echo "has_token=true" >> "$GITHUB_OUTPUT"
+          fi
+
       # ------------------------------------------------------------------ #
       # Coding habits: commits per hour of day, per weekday, language activity
       # ------------------------------------------------------------------ #
       - name: Coding habits
+        if: steps.check_token.outputs.has_token == 'true'
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
@@ -39,6 +46,7 @@ jobs:
       # Language breakdown (bytes-weighted, recent-activity weighted)
       # ------------------------------------------------------------------ #
       - name: Languages
+        if: steps.check_token.outputs.has_token == 'true'
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
@@ -56,6 +64,7 @@ jobs:
       # Achievement badges
       # ------------------------------------------------------------------ #
       - name: Achievements
+        if: steps.check_token.outputs.has_token == 'true'
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
