@@ -22,7 +22,7 @@
 <a href="https://leetcode.com/u/nitinpatidar9892/"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode"></a>
 <a href="https://x.com/nitin_patidarr"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X"></a>
 
-<img src="https://komarev.com/ghpvc/?username=Programmer-NITIN&style=flat&color=39d353&label=profile+views" alt="profile views">
+<img src="https://komarev.com/ghpvc/?username=Programmer-NITIN&style=flat&color=39d353&label=profile+views&base=17944" alt="profile views">
 
 </div>
 
