@@ -208,7 +208,7 @@
   </circle>
   <g class="arcade-font">
     <text x="30" y="38" class="hud-label">1UP</text>
-    <text x="30" y="55" class="hud-val">032000</text>
+    <text x="30" y="55" class="hud-val">033300</text>
     <text x="210" y="38" class="hud-label">HIGH SCORE</text>
     <text x="210" y="55" class="hud-hi">036000</text>
     <text x="430" y="42" text-anchor="middle" class="hud-title">SPACE INVADERS // COMMIT DEFENSE</text>
@@ -650,10 +650,10 @@
     <g transform="translate(690.0, 71.0) scale(1.05)" class="alien-1">
       <use href="#alien-squid"/>
     </g>
-    <g transform="translate(690.0, 84.5) scale(1.05)" class="alien-2">
+    <g transform="translate(690.0, 84.5) scale(1.05)" class="alien-1">
       <use href="#alien-squid"/>
     </g>
-    <g transform="translate(690.0, 98.0) scale(1.05)" class="alien-2">
+    <g transform="translate(690.0, 98.0) scale(1.05)" class="alien-1">
       <use href="#alien-crab"/>
     </g>
     <g transform="translate(690.0, 111.5) scale(1.05)" class="alien-1">
@@ -662,7 +662,7 @@
     <g transform="translate(690.0, 125.0) scale(1.05)" class="alien-1">
       <use href="#alien-crab"/>
     </g>
-    <g transform="translate(690.0, 138.5) scale(1.05)" class="alien-2">
+    <g transform="translate(690.0, 138.5) scale(1.05)" class="alien-1">
       <use href="#alien-octo"/>
     </g>
     <g transform="translate(690.0, 152.0) scale(1.05)" class="alien-1">
@@ -692,13 +692,13 @@
     <g transform="translate(717.0, 71.0) scale(1.05)" class="alien-1">
       <use href="#alien-squid"/>
     </g>
-    <g transform="translate(717.0, 84.5) scale(1.05)" class="alien-2">
+    <g transform="translate(717.0, 84.5) scale(1.05)" class="alien-1">
       <use href="#alien-squid"/>
     </g>
     <g transform="translate(717.0, 98.0) scale(1.05)" class="alien-1">
       <use href="#alien-crab"/>
     </g>
-    <g transform="translate(717.0, 111.5) scale(1.05)" class="alien-3">
+    <g transform="translate(717.0, 111.5) scale(1.05)" class="alien-2">
       <use href="#alien-crab"/>
     </g>
     <g transform="translate(717.0, 125.0) scale(1.05)" class="alien-1">
@@ -707,19 +707,19 @@
     <g transform="translate(717.0, 138.5) scale(1.05)" class="alien-1">
       <use href="#alien-octo"/>
     </g>
-    <g transform="translate(717.0, 152.0) scale(1.05)" class="alien-4">
+    <g transform="translate(717.0, 152.0) scale(1.05)" class="alien-2">
       <use href="#alien-octo"/>
     </g>
-    <g transform="translate(730.5, 71.0) scale(1.05)" class="alien-2">
+    <g transform="translate(730.5, 71.0) scale(1.05)" class="alien-1">
       <use href="#alien-squid"/>
     </g>
-    <g transform="translate(730.5, 84.5) scale(1.05)" class="alien-4">
+    <g transform="translate(730.5, 84.5) scale(1.05)" class="alien-3">
       <use href="#alien-squid"/>
     </g>
     <g transform="translate(730.5, 98.0) scale(1.05)" class="alien-1">
       <use href="#alien-crab"/>
     </g>
-    <g transform="translate(730.5, 111.5) scale(1.05)" class="alien-2">
+    <g transform="translate(730.5, 111.5) scale(1.05)" class="alien-1">
       <use href="#alien-crab"/>
     </g>
     <g transform="translate(730.5, 125.0) scale(1.05)" class="alien-1">
@@ -728,10 +728,10 @@
     <g transform="translate(730.5, 138.5) scale(1.05)" class="alien-1">
       <use href="#alien-octo"/>
     </g>
-    <g transform="translate(730.5, 152.0) scale(1.05)" class="alien-2">
+    <g transform="translate(730.5, 152.0) scale(1.05)" class="alien-1">
       <use href="#alien-octo"/>
     </g>
-    <g transform="translate(744.0, 71.0) scale(1.05)" class="alien-2">
+    <g transform="translate(744.0, 71.0) scale(1.05)" class="alien-1">
       <use href="#alien-squid"/>
     </g>
     <rect class="cell-0" x="743.0" y="83.5" width="10" height="10" rx="2"/>
@@ -739,46 +739,47 @@
       <use href="#alien-crab"/>
     </g>
     <rect class="cell-0" x="743.0" y="110.5" width="10" height="10" rx="2"/>
-    <g transform="translate(744.0, 125.0) scale(1.05)" class="alien-3">
+    <g transform="translate(744.0, 125.0) scale(1.05)" class="alien-2">
       <use href="#alien-crab"/>
     </g>
     <g transform="translate(744.0, 138.5) scale(1.05)" class="alien-1">
       <use href="#alien-octo"/>
     </g>
-    <g transform="translate(744.0, 152.0) scale(1.05)" class="alien-2">
+    <g transform="translate(744.0, 152.0) scale(1.05)" class="alien-1">
       <use href="#alien-octo"/>
     </g>
     <g transform="translate(757.5, 71.0) scale(1.05)" class="alien-1">
       <use href="#alien-squid"/>
     </g>
-    <g transform="translate(757.5, 84.5) scale(1.05)" class="alien-2">
+    <g transform="translate(757.5, 84.5) scale(1.05)" class="alien-1">
       <use href="#alien-squid"/>
     </g>
     <g transform="translate(757.5, 98.0) scale(1.05)" class="alien-1">
       <use href="#alien-crab"/>
     </g>
-    <g transform="translate(757.5, 111.5) scale(1.05)" class="alien-2">
+    <g transform="translate(757.5, 111.5) scale(1.05)" class="alien-1">
       <use href="#alien-crab"/>
     </g>
     <g transform="translate(757.5, 125.0) scale(1.05)" class="alien-1">
       <use href="#alien-crab"/>
     </g>
-    <g transform="translate(757.5, 138.5) scale(1.05)" class="alien-2">
+    <g transform="translate(757.5, 138.5) scale(1.05)" class="alien-1">
       <use href="#alien-octo"/>
     </g>
     <g transform="translate(757.5, 152.0) scale(1.05)" class="alien-4">
       <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.6278;0.6300;0.9500;1" dur="9.0s" repeatCount="indefinite"/>
       <use href="#alien-octo"/>
     </g>
-    <g transform="translate(771.0, 71.0) scale(1.05)" class="alien-4">
+    <g transform="translate(771.0, 71.0) scale(1.05)" class="alien-2">
       <use href="#alien-squid"/>
     </g>
     <g transform="translate(771.0, 84.5) scale(1.05)" class="alien-1">
       <use href="#alien-squid"/>
     </g>
-    <g transform="translate(771.0, 98.0) scale(1.05)" class="alien-3">
+    <g transform="translate(771.0, 98.0) scale(1.05)" class="alien-2">
       <use href="#alien-crab"/>
     </g>
+    <rect class="cell-0" x="770.0" y="110.5" width="10" height="10" rx="2"/>
   </g>
   <!-- 4 Classic Defense Bunkers -->
   <use href="#defense-bunker" x="130" y="194"/>
@@ -886,7 +887,7 @@
   </g>
   <g class="arcade-font" transform="translate(30, 292)">
     <text x="0" y="0" font-size="9" fill="#8b949e">PLAYER: <tspan fill="#58a6ff">NITIN PATIDAR</tspan></text>
-    <text x="430" y="0" text-anchor="middle" font-size="9" fill="#8b949e">TOTAL ALIEN COMMITS PURGED: <tspan fill="#39d353">320</tspan></text>
+    <text x="430" y="0" text-anchor="middle" font-size="9" fill="#8b949e">TOTAL ALIEN COMMITS PURGED: <tspan fill="#39d353">333</tspan></text>
     <text x="800" y="0" text-anchor="end" font-size="9" fill="#f2cc60">CREDIT 01</text>
   </g>
 </svg>
