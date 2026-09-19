@@ -784,6 +784,7 @@
       <use href="#alien-crab"/>
     </g>
     <rect class="cell-0" x="770.0" y="137.5" width="10" height="10" rx="2"/>
+    <rect class="cell-0" x="770.0" y="151.0" width="10" height="10" rx="2"/>
   </g>
   <!-- 4 Classic Defense Bunkers -->
   <use href="#defense-bunker" x="130" y="194"/>
