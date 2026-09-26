@@ -208,9 +208,9 @@
   </circle>
   <g class="arcade-font">
     <text x="30" y="38" class="hud-label">1UP</text>
-    <text x="30" y="55" class="hud-val">036600</text>
+    <text x="30" y="55" class="hud-val">037100</text>
     <text x="210" y="38" class="hud-label">HIGH SCORE</text>
-    <text x="210" y="55" class="hud-hi">036600</text>
+    <text x="210" y="55" class="hud-hi">037100</text>
     <text x="430" y="42" text-anchor="middle" class="hud-title">SPACE INVADERS // COMMIT DEFENSE</text>
     <text x="620" y="38" class="hud-label">STAGE</text>
     <text x="620" y="55" class="hud-val">53 WEEKS</text>
@@ -794,7 +794,10 @@
     <g transform="translate(771.0, 125.0) scale(1.05)" class="alien-1">
       <use href="#alien-crab"/>
     </g>
-    <rect class="cell-0" x="770.0" y="137.5" width="10" height="10" rx="2"/>
+    <g transform="translate(771.0, 138.5) scale(1.05)" class="alien-1">
+      <use href="#alien-octo"/>
+    </g>
+    <rect class="cell-0" x="770.0" y="151.0" width="10" height="10" rx="2"/>
   </g>
   <!-- 4 Classic Defense Bunkers -->
   <use href="#defense-bunker" x="130" y="194"/>
@@ -902,7 +905,7 @@
   </g>
   <g class="arcade-font" transform="translate(30, 292)">
     <text x="0" y="0" font-size="9" fill="#8b949e">PLAYER: <tspan fill="#58a6ff">NITIN PATIDAR</tspan></text>
-    <text x="430" y="0" text-anchor="middle" font-size="9" fill="#8b949e">TOTAL ALIEN COMMITS PURGED: <tspan fill="#39d353">366</tspan></text>
+    <text x="430" y="0" text-anchor="middle" font-size="9" fill="#8b949e">TOTAL ALIEN COMMITS PURGED: <tspan fill="#39d353">371</tspan></text>
     <text x="800" y="0" text-anchor="end" font-size="9" fill="#f2cc60">CREDIT 01</text>
   </g>
 </svg>
