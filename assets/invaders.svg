@@ -208,9 +208,9 @@
   </circle>
   <g class="arcade-font">
     <text x="30" y="38" class="hud-label">1UP</text>
-    <text x="30" y="55" class="hud-val">037100</text>
+    <text x="30" y="55" class="hud-val">038200</text>
     <text x="210" y="38" class="hud-label">HIGH SCORE</text>
-    <text x="210" y="55" class="hud-hi">037100</text>
+    <text x="210" y="55" class="hud-hi">038200</text>
     <text x="430" y="42" text-anchor="middle" class="hud-title">SPACE INVADERS // COMMIT DEFENSE</text>
     <text x="620" y="38" class="hud-label">STAGE</text>
     <text x="620" y="55" class="hud-val">53 WEEKS</text>
@@ -302,16 +302,16 @@
     <rect class="cell-0" x="189.5" y="137.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="189.5" y="151.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="203.0" y="70.0" width="10" height="10" rx="2"/>
-    <rect class="cell-0" x="203.0" y="83.5" width="10" height="10" rx="2"/>
+    <g transform="translate(204.0, 84.5) scale(1.05)" class="alien-1">
+      <use href="#alien-squid"/>
+    </g>
     <rect class="cell-0" x="203.0" y="97.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="203.0" y="110.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="203.0" y="124.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="203.0" y="137.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="203.0" y="151.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="216.5" y="70.0" width="10" height="10" rx="2"/>
-    <g transform="translate(217.5, 84.5) scale(1.05)" class="alien-1">
-      <use href="#alien-squid"/>
-    </g>
+    <rect class="cell-0" x="216.5" y="83.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="216.5" y="97.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="216.5" y="110.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="216.5" y="124.0" width="10" height="10" rx="2"/>
@@ -334,16 +334,16 @@
     <rect class="cell-0" x="257.0" y="70.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="257.0" y="83.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="257.0" y="97.0" width="10" height="10" rx="2"/>
-    <rect class="cell-0" x="257.0" y="110.5" width="10" height="10" rx="2"/>
+    <g transform="translate(258.0, 111.5) scale(1.05)" class="alien-1">
+      <use href="#alien-crab"/>
+    </g>
     <rect class="cell-0" x="257.0" y="124.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="257.0" y="137.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="257.0" y="151.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="270.5" y="70.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="270.5" y="83.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="270.5" y="97.0" width="10" height="10" rx="2"/>
-    <g transform="translate(271.5, 111.5) scale(1.05)" class="alien-1">
-      <use href="#alien-crab"/>
-    </g>
+    <rect class="cell-0" x="270.5" y="110.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="270.5" y="124.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="270.5" y="137.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="270.5" y="151.0" width="10" height="10" rx="2"/>
@@ -355,16 +355,16 @@
     <rect class="cell-0" x="284.0" y="137.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="284.0" y="151.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="297.5" y="70.0" width="10" height="10" rx="2"/>
-    <rect class="cell-0" x="297.5" y="83.5" width="10" height="10" rx="2"/>
+    <g transform="translate(298.5, 84.5) scale(1.05)" class="alien-1">
+      <use href="#alien-squid"/>
+    </g>
     <rect class="cell-0" x="297.5" y="97.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="297.5" y="110.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="297.5" y="124.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="297.5" y="137.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="297.5" y="151.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="311.0" y="70.0" width="10" height="10" rx="2"/>
-    <g transform="translate(312.0, 84.5) scale(1.05)" class="alien-1">
-      <use href="#alien-squid"/>
-    </g>
+    <rect class="cell-0" x="311.0" y="83.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="311.0" y="97.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="311.0" y="110.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="311.0" y="124.0" width="10" height="10" rx="2"/>
@@ -380,16 +380,16 @@
     <rect class="cell-0" x="338.0" y="70.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="338.0" y="83.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="338.0" y="97.0" width="10" height="10" rx="2"/>
-    <rect class="cell-0" x="338.0" y="110.5" width="10" height="10" rx="2"/>
+    <g transform="translate(339.0, 111.5) scale(1.05)" class="alien-1">
+      <use href="#alien-crab"/>
+    </g>
     <rect class="cell-0" x="338.0" y="124.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="338.0" y="137.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="338.0" y="151.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="351.5" y="70.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="351.5" y="83.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="351.5" y="97.0" width="10" height="10" rx="2"/>
-    <g transform="translate(352.5, 111.5) scale(1.05)" class="alien-1">
-      <use href="#alien-crab"/>
-    </g>
+    <rect class="cell-0" x="351.5" y="110.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="351.5" y="124.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="351.5" y="137.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="351.5" y="151.0" width="10" height="10" rx="2"/>
@@ -406,16 +406,16 @@
     <rect class="cell-0" x="378.5" y="110.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="378.5" y="124.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="378.5" y="137.5" width="10" height="10" rx="2"/>
-    <rect class="cell-0" x="378.5" y="151.0" width="10" height="10" rx="2"/>
+    <g transform="translate(379.5, 152.0) scale(1.05)" class="alien-1">
+      <use href="#alien-octo"/>
+    </g>
     <rect class="cell-0" x="392.0" y="70.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="392.0" y="83.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="392.0" y="97.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="392.0" y="110.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="392.0" y="124.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="392.0" y="137.5" width="10" height="10" rx="2"/>
-    <g transform="translate(393.0, 152.0) scale(1.05)" class="alien-1">
-      <use href="#alien-octo"/>
-    </g>
+    <rect class="cell-0" x="392.0" y="151.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="405.5" y="70.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="405.5" y="83.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="405.5" y="97.0" width="10" height="10" rx="2"/>
@@ -423,23 +423,35 @@
     <rect class="cell-0" x="405.5" y="124.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="405.5" y="137.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="405.5" y="151.0" width="10" height="10" rx="2"/>
-    <rect class="cell-0" x="419.0" y="70.0" width="10" height="10" rx="2"/>
+    <g transform="translate(420.0, 71.0) scale(1.05)" class="alien-1">
+      <use href="#alien-squid"/>
+    </g>
     <rect class="cell-0" x="419.0" y="83.5" width="10" height="10" rx="2"/>
-    <rect class="cell-0" x="419.0" y="97.0" width="10" height="10" rx="2"/>
+    <g transform="translate(420.0, 98.0) scale(1.05)" class="alien-1">
+      <use href="#alien-crab"/>
+    </g>
     <rect class="cell-0" x="419.0" y="110.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="419.0" y="124.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="419.0" y="137.5" width="10" height="10" rx="2"/>
-    <rect class="cell-0" x="419.0" y="151.0" width="10" height="10" rx="2"/>
+    <g transform="translate(420.0, 152.0) scale(1.05)" class="alien-1">
+      <use href="#alien-octo"/>
+    </g>
     <g transform="translate(433.5, 71.0) scale(1.05)" class="alien-1">
       <use href="#alien-squid"/>
     </g>
-    <rect class="cell-0" x="432.5" y="83.5" width="10" height="10" rx="2"/>
+    <g transform="translate(433.5, 84.5) scale(1.05)" class="alien-1">
+      <use href="#alien-squid"/>
+    </g>
     <g transform="translate(433.5, 98.0) scale(1.05)" class="alien-1">
       <use href="#alien-crab"/>
     </g>
     <rect class="cell-0" x="432.5" y="110.5" width="10" height="10" rx="2"/>
-    <rect class="cell-0" x="432.5" y="124.0" width="10" height="10" rx="2"/>
-    <rect class="cell-0" x="432.5" y="137.5" width="10" height="10" rx="2"/>
+    <g transform="translate(433.5, 125.0) scale(1.05)" class="alien-1">
+      <use href="#alien-crab"/>
+    </g>
+    <g transform="translate(433.5, 138.5) scale(1.05)" class="alien-1">
+      <use href="#alien-octo"/>
+    </g>
     <g transform="translate(433.5, 152.0) scale(1.05)" class="alien-1">
       <use href="#alien-octo"/>
     </g>
@@ -452,26 +464,21 @@
     <g transform="translate(447.0, 98.0) scale(1.05)" class="alien-1">
       <use href="#alien-crab"/>
     </g>
-    <rect class="cell-0" x="446.0" y="110.5" width="10" height="10" rx="2"/>
+    <g transform="translate(447.0, 111.5) scale(1.05)" class="alien-1">
+      <use href="#alien-crab"/>
+    </g>
     <g transform="translate(447.0, 125.0) scale(1.05)" class="alien-1">
       <use href="#alien-crab"/>
     </g>
     <g transform="translate(447.0, 138.5) scale(1.05)" class="alien-1">
       <use href="#alien-octo"/>
     </g>
-    <g transform="translate(447.0, 152.0) scale(1.05)" class="alien-1">
-      <use href="#alien-octo"/>
-    </g>
+    <rect class="cell-0" x="446.0" y="151.0" width="10" height="10" rx="2"/>
     <g transform="translate(460.5, 71.0) scale(1.05)" class="alien-1">
       <use href="#alien-squid"/>
     </g>
-    <g transform="translate(460.5, 84.5) scale(1.05)" class="alien-1">
-      <use href="#alien-squid"/>
-    </g>
-    <g transform="translate(460.5, 98.0) scale(1.05)" class="alien-1">
-      <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.3700;0.3722;0.9500;1" dur="9.0s" repeatCount="indefinite"/>
-      <use href="#alien-crab"/>
-    </g>
+    <rect class="cell-0" x="459.5" y="83.5" width="10" height="10" rx="2"/>
+    <rect class="cell-0" x="459.5" y="97.0" width="10" height="10" rx="2"/>
     <g transform="translate(460.5, 111.5) scale(1.05)" class="alien-1">
       <use href="#alien-crab"/>
     </g>
@@ -482,26 +489,20 @@
       <use href="#alien-octo"/>
     </g>
     <rect class="cell-0" x="459.5" y="151.0" width="10" height="10" rx="2"/>
-    <g transform="translate(474.0, 71.0) scale(1.05)" class="alien-1">
-      <use href="#alien-squid"/>
-    </g>
+    <rect class="cell-0" x="473.0" y="70.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="473.0" y="83.5" width="10" height="10" rx="2"/>
-    <rect class="cell-0" x="473.0" y="97.0" width="10" height="10" rx="2"/>
-    <g transform="translate(474.0, 111.5) scale(1.05)" class="alien-1">
+    <g transform="translate(474.0, 98.0) scale(1.05)" class="alien-1">
       <use href="#alien-crab"/>
     </g>
-    <g transform="translate(474.0, 125.0) scale(1.05)" class="alien-1">
-      <use href="#alien-crab"/>
-    </g>
-    <g transform="translate(474.0, 138.5) scale(1.05)" class="alien-1">
+    <rect class="cell-0" x="473.0" y="110.5" width="10" height="10" rx="2"/>
+    <rect class="cell-0" x="473.0" y="124.0" width="10" height="10" rx="2"/>
+    <rect class="cell-0" x="473.0" y="137.5" width="10" height="10" rx="2"/>
+    <g transform="translate(474.0, 152.0) scale(1.05)" class="alien-1">
       <use href="#alien-octo"/>
     </g>
-    <rect class="cell-0" x="473.0" y="151.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="486.5" y="70.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="486.5" y="83.5" width="10" height="10" rx="2"/>
-    <g transform="translate(487.5, 98.0) scale(1.05)" class="alien-1">
-      <use href="#alien-crab"/>
-    </g>
+    <rect class="cell-0" x="486.5" y="97.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="486.5" y="110.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="486.5" y="124.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="486.5" y="137.5" width="10" height="10" rx="2"/>
@@ -510,33 +511,31 @@
     </g>
     <rect class="cell-0" x="500.0" y="70.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="500.0" y="83.5" width="10" height="10" rx="2"/>
-    <rect class="cell-0" x="500.0" y="97.0" width="10" height="10" rx="2"/>
+    <g transform="translate(501.0, 98.0) scale(1.05)" class="alien-1">
+      <use href="#alien-crab"/>
+    </g>
     <rect class="cell-0" x="500.0" y="110.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="500.0" y="124.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="500.0" y="137.5" width="10" height="10" rx="2"/>
-    <g transform="translate(501.0, 152.0) scale(1.05)" class="alien-1">
-      <use href="#alien-octo"/>
-    </g>
+    <rect class="cell-0" x="500.0" y="151.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="513.5" y="70.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="513.5" y="83.5" width="10" height="10" rx="2"/>
-    <g transform="translate(514.5, 98.0) scale(1.05)" class="alien-1">
+    <rect class="cell-0" x="513.5" y="97.0" width="10" height="10" rx="2"/>
+    <rect class="cell-0" x="513.5" y="110.5" width="10" height="10" rx="2"/>
+    <g transform="translate(514.5, 125.0) scale(1.05)" class="alien-1">
       <use href="#alien-crab"/>
     </g>
-    <rect class="cell-0" x="513.5" y="110.5" width="10" height="10" rx="2"/>
-    <rect class="cell-0" x="513.5" y="124.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="513.5" y="137.5" width="10" height="10" rx="2"/>
-    <rect class="cell-0" x="513.5" y="151.0" width="10" height="10" rx="2"/>
+    <g transform="translate(514.5, 152.0) scale(1.05)" class="alien-1">
+      <use href="#alien-octo"/>
+    </g>
     <rect class="cell-0" x="527.0" y="70.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="527.0" y="83.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="527.0" y="97.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="527.0" y="110.5" width="10" height="10" rx="2"/>
-    <g transform="translate(528.0, 125.0) scale(1.05)" class="alien-1">
-      <use href="#alien-crab"/>
-    </g>
+    <rect class="cell-0" x="527.0" y="124.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="527.0" y="137.5" width="10" height="10" rx="2"/>
-    <g transform="translate(528.0, 152.0) scale(1.05)" class="alien-1">
-      <use href="#alien-octo"/>
-    </g>
+    <rect class="cell-0" x="527.0" y="151.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="540.5" y="70.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="540.5" y="83.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="540.5" y="97.0" width="10" height="10" rx="2"/>
@@ -552,41 +551,43 @@
     <rect class="cell-0" x="554.0" y="137.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="554.0" y="151.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="567.5" y="70.0" width="10" height="10" rx="2"/>
-    <rect class="cell-0" x="567.5" y="83.5" width="10" height="10" rx="2"/>
+    <g transform="translate(568.5, 84.5) scale(1.05)" class="alien-1">
+      <use href="#alien-squid"/>
+    </g>
     <rect class="cell-0" x="567.5" y="97.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="567.5" y="110.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="567.5" y="124.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="567.5" y="137.5" width="10" height="10" rx="2"/>
-    <rect class="cell-0" x="567.5" y="151.0" width="10" height="10" rx="2"/>
-    <rect class="cell-0" x="581.0" y="70.0" width="10" height="10" rx="2"/>
-    <g transform="translate(582.0, 84.5) scale(1.05)" class="alien-1">
+    <g transform="translate(568.5, 152.0) scale(1.05)" class="alien-1">
+      <use href="#alien-octo"/>
+    </g>
+    <g transform="translate(582.0, 71.0) scale(1.05)" class="alien-1">
       <use href="#alien-squid"/>
     </g>
+    <rect class="cell-0" x="581.0" y="83.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="581.0" y="97.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="581.0" y="110.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="581.0" y="124.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="581.0" y="137.5" width="10" height="10" rx="2"/>
-    <g transform="translate(582.0, 152.0) scale(1.05)" class="alien-1">
-      <use href="#alien-octo"/>
-    </g>
-    <g transform="translate(595.5, 71.0) scale(1.05)" class="alien-1">
-      <use href="#alien-squid"/>
-    </g>
+    <rect class="cell-0" x="581.0" y="151.0" width="10" height="10" rx="2"/>
+    <rect class="cell-0" x="594.5" y="70.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="594.5" y="83.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="594.5" y="97.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="594.5" y="110.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="594.5" y="124.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="594.5" y="137.5" width="10" height="10" rx="2"/>
-    <rect class="cell-0" x="594.5" y="151.0" width="10" height="10" rx="2"/>
-    <rect class="cell-0" x="608.0" y="70.0" width="10" height="10" rx="2"/>
+    <g transform="translate(595.5, 152.0) scale(1.05)" class="alien-1">
+      <use href="#alien-octo"/>
+    </g>
+    <g transform="translate(609.0, 71.0) scale(1.05)" class="alien-1">
+      <use href="#alien-squid"/>
+    </g>
     <rect class="cell-0" x="608.0" y="83.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="608.0" y="97.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="608.0" y="110.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="608.0" y="124.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="608.0" y="137.5" width="10" height="10" rx="2"/>
-    <g transform="translate(609.0, 152.0) scale(1.05)" class="alien-1">
-      <use href="#alien-octo"/>
-    </g>
+    <rect class="cell-0" x="608.0" y="151.0" width="10" height="10" rx="2"/>
     <g transform="translate(622.5, 71.0) scale(1.05)" class="alien-1">
       <use href="#alien-squid"/>
     </g>
@@ -599,11 +600,15 @@
     <g transform="translate(636.0, 71.0) scale(1.05)" class="alien-1">
       <use href="#alien-squid"/>
     </g>
-    <rect class="cell-0" x="635.0" y="83.5" width="10" height="10" rx="2"/>
+    <g transform="translate(636.0, 84.5) scale(1.05)" class="alien-1">
+      <use href="#alien-squid"/>
+    </g>
     <rect class="cell-0" x="635.0" y="97.0" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="635.0" y="110.5" width="10" height="10" rx="2"/>
     <rect class="cell-0" x="635.0" y="124.0" width="10" height="10" rx="2"/>
-    <rect class="cell-0" x="635.0" y="137.5" width="10" height="10" rx="2"/>
+    <g transform="translate(636.0, 138.5) scale(1.05)" class="alien-1">
+      <use href="#alien-octo"/>
+    </g>
     <rect class="cell-0" x="635.0" y="151.0" width="10" height="10" rx="2"/>
     <g transform="translate(649.5, 71.0) scale(1.05)" class="alien-1">
       <use href="#alien-squid"/>
@@ -611,13 +616,21 @@
     <g transform="translate(649.5, 84.5) scale(1.05)" class="alien-1">
       <use href="#alien-squid"/>
     </g>
-    <rect class="cell-0" x="648.5" y="97.0" width="10" height="10" rx="2"/>
-    <rect class="cell-0" x="648.5" y="110.5" width="10" height="10" rx="2"/>
-    <rect class="cell-0" x="648.5" y="124.0" width="10" height="10" rx="2"/>
+    <g transform="translate(649.5, 98.0) scale(1.05)" class="alien-1">
+      <use href="#alien-crab"/>
+    </g>
+    <g transform="translate(649.5, 111.5) scale(1.05)" class="alien-1">
+      <use href="#alien-crab"/>
+    </g>
+    <g transform="translate(649.5, 125.0) scale(1.05)" class="alien-1">
+      <use href="#alien-crab"/>
+    </g>
     <g transform="translate(649.5, 138.5) scale(1.05)" class="alien-1">
       <use href="#alien-octo"/>
     </g>
-    <rect class="cell-0" x="648.5" y="151.0" width="10" height="10" rx="2"/>
+    <g transform="translate(649.5, 152.0) scale(1.05)" class="alien-1">
+      <use href="#alien-octo"/>
+    </g>
     <g transform="translate(663.0, 71.0) scale(1.05)" class="alien-1">
       <use href="#alien-squid"/>
     </g>
@@ -669,7 +682,7 @@
     <g transform="translate(690.0, 98.0) scale(1.05)" class="alien-1">
       <use href="#alien-crab"/>
     </g>
-    <g transform="translate(690.0, 111.5) scale(1.05)" class="alien-1">
+    <g transform="translate(690.0, 111.5) scale(1.05)" class="alien-2">
       <use href="#alien-crab"/>
     </g>
     <g transform="translate(690.0, 125.0) scale(1.05)" class="alien-1">
@@ -678,19 +691,19 @@
     <g transform="translate(690.0, 138.5) scale(1.05)" class="alien-1">
       <use href="#alien-octo"/>
     </g>
-    <g transform="translate(690.0, 152.0) scale(1.05)" class="alien-1">
+    <g transform="translate(690.0, 152.0) scale(1.05)" class="alien-2">
       <use href="#alien-octo"/>
     </g>
     <g transform="translate(703.5, 71.0) scale(1.05)" class="alien-1">
       <use href="#alien-squid"/>
     </g>
-    <g transform="translate(703.5, 84.5) scale(1.05)" class="alien-1">
+    <g transform="translate(703.5, 84.5) scale(1.05)" class="alien-3">
       <use href="#alien-squid"/>
     </g>
     <g transform="translate(703.5, 98.0) scale(1.05)" class="alien-1">
       <use href="#alien-crab"/>
     </g>
-    <g transform="translate(703.5, 111.5) scale(1.05)" class="alien-2">
+    <g transform="translate(703.5, 111.5) scale(1.05)" class="alien-1">
       <use href="#alien-crab"/>
     </g>
     <g transform="translate(703.5, 125.0) scale(1.05)" class="alien-1">
@@ -699,22 +712,18 @@
     <g transform="translate(703.5, 138.5) scale(1.05)" class="alien-1">
       <use href="#alien-octo"/>
     </g>
-    <g transform="translate(703.5, 152.0) scale(1.05)" class="alien-2">
+    <g transform="translate(703.5, 152.0) scale(1.05)" class="alien-1">
       <use href="#alien-octo"/>
     </g>
     <g transform="translate(717.0, 71.0) scale(1.05)" class="alien-1">
       <use href="#alien-squid"/>
     </g>
-    <g transform="translate(717.0, 84.5) scale(1.05)" class="alien-3">
-      <use href="#alien-squid"/>
-    </g>
+    <rect class="cell-0" x="716.0" y="83.5" width="10" height="10" rx="2"/>
     <g transform="translate(717.0, 98.0) scale(1.05)" class="alien-1">
       <use href="#alien-crab"/>
     </g>
-    <g transform="translate(717.0, 111.5) scale(1.05)" class="alien-1">
-      <use href="#alien-crab"/>
-    </g>
-    <g transform="translate(717.0, 125.0) scale(1.05)" class="alien-1">
+    <rect class="cell-0" x="716.0" y="110.5" width="10" height="10" rx="2"/>
+    <g transform="translate(717.0, 125.0) scale(1.05)" class="alien-2">
       <use href="#alien-crab"/>
     </g>
     <g transform="translate(717.0, 138.5) scale(1.05)" class="alien-1">
@@ -726,55 +735,59 @@
     <g transform="translate(730.5, 71.0) scale(1.05)" class="alien-1">
       <use href="#alien-squid"/>
     </g>
-    <rect class="cell-0" x="729.5" y="83.5" width="10" height="10" rx="2"/>
+    <g transform="translate(730.5, 84.5) scale(1.05)" class="alien-1">
+      <use href="#alien-squid"/>
+    </g>
     <g transform="translate(730.5, 98.0) scale(1.05)" class="alien-1">
       <use href="#alien-crab"/>
     </g>
-    <rect class="cell-0" x="729.5" y="110.5" width="10" height="10" rx="2"/>
-    <g transform="translate(730.5, 125.0) scale(1.05)" class="alien-2">
+    <g transform="translate(730.5, 111.5) scale(1.05)" class="alien-1">
+      <use href="#alien-crab"/>
+    </g>
+    <g transform="translate(730.5, 125.0) scale(1.05)" class="alien-1">
       <use href="#alien-crab"/>
     </g>
     <g transform="translate(730.5, 138.5) scale(1.05)" class="alien-1">
       <use href="#alien-octo"/>
     </g>
-    <g transform="translate(730.5, 152.0) scale(1.05)" class="alien-1">
+    <g transform="translate(730.5, 152.0) scale(1.05)" class="alien-4">
       <use href="#alien-octo"/>
     </g>
-    <g transform="translate(744.0, 71.0) scale(1.05)" class="alien-1">
+    <g transform="translate(744.0, 71.0) scale(1.05)" class="alien-2">
       <use href="#alien-squid"/>
     </g>
     <g transform="translate(744.0, 84.5) scale(1.05)" class="alien-1">
       <use href="#alien-squid"/>
     </g>
-    <g transform="translate(744.0, 98.0) scale(1.05)" class="alien-1">
+    <g transform="translate(744.0, 98.0) scale(1.05)" class="alien-2">
       <use href="#alien-crab"/>
     </g>
-    <g transform="translate(744.0, 111.5) scale(1.05)" class="alien-1">
-      <use href="#alien-crab"/>
-    </g>
+    <rect class="cell-0" x="743.0" y="110.5" width="10" height="10" rx="2"/>
     <g transform="translate(744.0, 125.0) scale(1.05)" class="alien-1">
       <use href="#alien-crab"/>
     </g>
-    <g transform="translate(744.0, 138.5) scale(1.05)" class="alien-1">
+    <rect class="cell-0" x="743.0" y="137.5" width="10" height="10" rx="2"/>
+    <g transform="translate(744.0, 152.0) scale(1.05)" class="alien-1">
       <use href="#alien-octo"/>
     </g>
-    <g transform="translate(744.0, 152.0) scale(1.05)" class="alien-4">
-      <use href="#alien-octo"/>
-    </g>
-    <g transform="translate(757.5, 71.0) scale(1.05)" class="alien-2">
+    <g transform="translate(757.5, 71.0) scale(1.05)" class="alien-1">
       <use href="#alien-squid"/>
     </g>
     <g transform="translate(757.5, 84.5) scale(1.05)" class="alien-1">
       <use href="#alien-squid"/>
     </g>
-    <g transform="translate(757.5, 98.0) scale(1.05)" class="alien-2">
+    <g transform="translate(757.5, 98.0) scale(1.05)" class="alien-1">
       <use href="#alien-crab"/>
     </g>
-    <rect class="cell-0" x="756.5" y="110.5" width="10" height="10" rx="2"/>
+    <g transform="translate(757.5, 111.5) scale(1.05)" class="alien-1">
+      <use href="#alien-crab"/>
+    </g>
     <g transform="translate(757.5, 125.0) scale(1.05)" class="alien-1">
       <use href="#alien-crab"/>
     </g>
-    <rect class="cell-0" x="756.5" y="137.5" width="10" height="10" rx="2"/>
+    <g transform="translate(757.5, 138.5) scale(1.05)" class="alien-1">
+      <use href="#alien-octo"/>
+    </g>
     <g transform="translate(757.5, 152.0) scale(1.05)" class="alien-1">
       <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.6278;0.6300;0.9500;1" dur="9.0s" repeatCount="indefinite"/>
       <use href="#alien-octo"/>
@@ -782,22 +795,6 @@
     <g transform="translate(771.0, 71.0) scale(1.05)" class="alien-1">
       <use href="#alien-squid"/>
     </g>
-    <g transform="translate(771.0, 84.5) scale(1.05)" class="alien-1">
-      <use href="#alien-squid"/>
-    </g>
-    <g transform="translate(771.0, 98.0) scale(1.05)" class="alien-1">
-      <use href="#alien-crab"/>
-    </g>
-    <g transform="translate(771.0, 111.5) scale(1.05)" class="alien-1">
-      <use href="#alien-crab"/>
-    </g>
-    <g transform="translate(771.0, 125.0) scale(1.05)" class="alien-1">
-      <use href="#alien-crab"/>
-    </g>
-    <g transform="translate(771.0, 138.5) scale(1.05)" class="alien-1">
-      <use href="#alien-octo"/>
-    </g>
-    <rect class="cell-0" x="770.0" y="151.0" width="10" height="10" rx="2"/>
   </g>
   <!-- 4 Classic Defense Bunkers -->
   <use href="#defense-bunker" x="130" y="194"/>
@@ -905,7 +902,7 @@
   </g>
   <g class="arcade-font" transform="translate(30, 292)">
     <text x="0" y="0" font-size="9" fill="#8b949e">PLAYER: <tspan fill="#58a6ff">NITIN PATIDAR</tspan></text>
-    <text x="430" y="0" text-anchor="middle" font-size="9" fill="#8b949e">TOTAL ALIEN COMMITS PURGED: <tspan fill="#39d353">371</tspan></text>
+    <text x="430" y="0" text-anchor="middle" font-size="9" fill="#8b949e">TOTAL ALIEN COMMITS PURGED: <tspan fill="#39d353">382</tspan></text>
     <text x="800" y="0" text-anchor="end" font-size="9" fill="#f2cc60">CREDIT 01</text>
   </g>
 </svg>

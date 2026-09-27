@@ -48,7 +48,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M7.998 14.5c2.832 0 5-1.98 5-4.5 0-1.463-.68-2.19-1.879-3.383l-.036-.037c-1.013-1.008-2.3-2.29-2.834-4.434-.322.256-.63.579-.864.953-.432.696-.621 1.58-.046 2.73.473.947.67 2.284-.278 3.232-.61.61-1.545.84-2.403.633a2.788 2.788 0 01-1.436-.874A3.21 3.21 0 003 10c0 2.53 2.164 4.5 4.998 4.5zM9.533.753C9.496.34 9.16.009 8.77.146 7.035.75 4.34 3.187 5.997 6.5c.344.689.285 1.218.003 1.5-.419.419-1.54.487-2.04-.832-.173-.454-.659-.762-1.035-.454C2.036 7.44 1.5 8.702 1.5 10c0 3.512 2.998 6 6.498 6s6.5-2.5 6.5-6c0-2.137-1.128-3.26-2.312-4.438-1.19-1.184-2.436-2.425-2.653-4.81z"/>
                             </svg>
-                            Current streak 7 days
+                            Current streak 9 days
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -72,7 +72,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path d="M10.896 2H8.75V.75a.75.75 0 00-1.5 0V2H5.104a.25.25 0 00-.177.427l2.896 2.896a.25.25 0 00.354 0l2.896-2.896A.25.25 0 0010.896 2zM8.75 15.25a.75.75 0 01-1.5 0V14H5.104a.25.25 0 01-.177-.427l2.896-2.896a.25.25 0 01.354 0l2.896 2.896a.25.25 0 01-.177.427H8.75v1.25zm-6.5-6.5a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM6 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 016 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM12 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 0112 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5z"/>
                             </svg>
-                            Average per day at ~1.00
+                            Average per day at ~1.05
                         </div>
                     </section>
                 </div>
@@ -468,10 +468,13 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                                 <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
                                 <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
                             </g>
-                            <g transform="translate(-1.7, 7.00)">
-                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
-                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
+                            <g transform="translate(-1.7, 5.79)">
+                                <g>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.21; 0,0; 0,0; 0,1.21" begin="0.35s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.21 0,2.21 z" />
+                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.21 1.7,3.21 z" />
+                                </g>
                             </g>
                             <g transform="translate(-3.4, 8.00)">
                                 <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
@@ -505,13 +508,10 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                                 <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
                                 <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
                             </g>
-                            <g transform="translate(-1.7, 5.79)">
-                                <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.21; 0,0; 0,0; 0,1.21" begin="0.385s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
-                                  <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.21 0,2.21 z" />
-                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.21 1.7,3.21 z" />
-                                </g>
+                            <g transform="translate(-1.7, 7.00)">
+                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
+                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
                             </g>
                             <g transform="translate(-3.4, 8.00)">
                                 <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
@@ -629,10 +629,13 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                                 <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
                                 <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
                             </g>
-                            <g transform="translate(-5.1, 9.00)">
-                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
-                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
+                            <g transform="translate(-5.1, 7.83)">
+                                <g>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="0.49s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
+                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
+                                </g>
                             </g>
                             <g transform="translate(-6.8, 10.00)">
                                 <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
@@ -666,13 +669,10 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                                 <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
                                 <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
                             </g>
-                            <g transform="translate(-5.1, 7.83)">
-                                <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="0.525s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
-                                  <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
-                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
-                                </g>
+                            <g transform="translate(-5.1, 9.00)">
+                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
+                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
                             </g>
                             <g transform="translate(-6.8, 10.00)">
                                 <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
@@ -733,10 +733,13 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                                 <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
                                 <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
                             </g>
-                            <g transform="translate(-1.7, 7.00)">
-                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
-                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
+                            <g transform="translate(-1.7, 5.83)">
+                                <g>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="0.595s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
+                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
+                                </g>
                             </g>
                             <g transform="translate(-3.4, 8.00)">
                                 <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
@@ -770,13 +773,10 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                                 <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
                                 <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
                             </g>
-                            <g transform="translate(-1.7, 5.83)">
-                                <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="0.63s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
-                                  <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
-                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
-                                </g>
+                            <g transform="translate(-1.7, 7.00)">
+                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
+                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
                             </g>
                             <g transform="translate(-3.4, 8.00)">
                                 <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
@@ -857,10 +857,13 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                                 <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
                                 <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
                             </g>
-                            <g transform="translate(-5.1, 9.00)">
-                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
-                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
+                            <g transform="translate(-5.1, 7.83)">
+                                <g>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="0.7s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
+                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
+                                </g>
                             </g>
                             <g transform="translate(-6.8, 10.00)">
                                 <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
@@ -894,13 +897,10 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                                 <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
                                 <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
                             </g>
-                            <g transform="translate(-5.1, 7.83)">
-                                <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="0.735s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
-                                  <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
-                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
-                                </g>
+                            <g transform="translate(-5.1, 9.00)">
+                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
+                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
                             </g>
                             <g transform="translate(-6.8, 10.00)">
                                 <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
@@ -986,10 +986,13 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                                 <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
                                 <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
                             </g>
-                            <g transform="translate(-10.2, 12.00)">
-                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
-                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
+                            <g transform="translate(-10.2, 10.83)">
+                                <g>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="0.805s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
+                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
+                                </g>
                             </g>
                         </g>
                         <g transform="translate(40.8, 24.0)">
@@ -1023,13 +1026,10 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                                 <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
                                 <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
                             </g>
-                            <g transform="translate(-10.2, 10.83)">
-                                <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="0.84s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
-                                  <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
-                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
-                                </g>
+                            <g transform="translate(-10.2, 12.00)">
+                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
+                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
                             </g>
                         </g>
                         <g transform="translate(42.5, 25.0)">
@@ -1070,46 +1070,9 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                         </g>
                         <g transform="translate(44.2, 26.0)">
-                            <g transform="translate(-0.0, 6.00)">
-                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
-                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
-                            </g>
-                            <g transform="translate(-1.7, 7.00)">
-                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
-                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
-                            </g>
-                            <g transform="translate(-3.4, 8.00)">
-                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
-                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
-                            </g>
-                            <g transform="translate(-5.1, 9.00)">
-                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
-                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
-                            </g>
-                            <g transform="translate(-6.8, 10.00)">
-                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
-                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
-                            </g>
-                            <g transform="translate(-8.5, 11.00)">
-                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
-                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
-                            </g>
-                            <g transform="translate(-10.2, 12.00)">
-                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
-                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
-                            </g>
-                        </g>
-                        <g transform="translate(45.9, 27.0)">
                             <g transform="translate(-0.0, 4.83)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="0.945s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="0.91s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
@@ -1122,7 +1085,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-3.4, 6.79)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.21; 0,0; 0,0; 0,1.21" begin="0.945s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.21; 0,0; 0,0; 0,1.21" begin="0.91s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.21 0,2.21 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.21 1.7,3.21 z" />
@@ -1145,17 +1108,17 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-10.2, 10.83)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="0.945s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="0.91s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
                                 </g>
                             </g>
                         </g>
-                        <g transform="translate(47.6, 28.0)">
+                        <g transform="translate(45.9, 27.0)">
                             <g transform="translate(-0.0, 4.79)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.21; 0,0; 0,0; 0,1.21" begin="0.98s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.21; 0,0; 0,0; 0,1.21" begin="0.945s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.21 0,2.21 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.21 1.7,3.21 z" />
@@ -1163,7 +1126,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-1.7, 5.79)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.21; 0,0; 0,0; 0,1.21" begin="0.98s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.21; 0,0; 0,0; 0,1.21" begin="0.945s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.21 0,2.21 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.21 1.7,3.21 z" />
@@ -1171,7 +1134,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-3.4, 6.75)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.25; 0,0; 0,0; 0,1.25" begin="0.98s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.25; 0,0; 0,0; 0,1.25" begin="0.945s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.25 0,2.25 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.25 1.7,3.25 z" />
@@ -1184,7 +1147,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-6.8, 8.75)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.25; 0,0; 0,0; 0,1.25" begin="0.98s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.25; 0,0; 0,0; 0,1.25" begin="0.945s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.25 0,2.25 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.25 1.7,3.25 z" />
@@ -1192,7 +1155,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-8.5, 9.83)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="0.98s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="0.945s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
@@ -1200,17 +1163,17 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-10.2, 10.83)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="0.98s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="0.945s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
                                 </g>
                             </g>
                         </g>
-                        <g transform="translate(49.3, 29.0)">
+                        <g transform="translate(47.6, 28.0)">
                             <g transform="translate(-0.0, 4.83)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.015s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="0.98s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
@@ -1218,7 +1181,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-1.7, 5.79)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.21; 0,0; 0,0; 0,1.21" begin="1.015s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.21; 0,0; 0,0; 0,1.21" begin="0.98s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.21 0,2.21 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.21 1.7,3.21 z" />
@@ -1226,7 +1189,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-3.4, 6.83)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.015s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="0.98s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
@@ -1234,7 +1197,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-5.1, 7.83)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.015s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="0.98s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
@@ -1242,7 +1205,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-6.8, 8.83)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.015s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="0.98s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
@@ -1250,7 +1213,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-8.5, 9.83)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.015s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="0.98s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
@@ -1262,10 +1225,10 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                                 <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
                             </g>
                         </g>
-                        <g transform="translate(51.0, 30.0)">
+                        <g transform="translate(49.3, 29.0)">
                             <g transform="translate(-0.0, 4.75)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.25; 0,0; 0,0; 0,1.25" begin="1.05s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.25; 0,0; 0,0; 0,1.25" begin="1.015s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.25 0,2.25 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.25 1.7,3.25 z" />
@@ -1283,7 +1246,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-5.1, 7.83)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.05s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.015s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
@@ -1291,7 +1254,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-6.8, 8.83)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.05s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.015s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
@@ -1299,7 +1262,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-8.5, 9.79)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.21; 0,0; 0,0; 0,1.21" begin="1.05s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.21; 0,0; 0,0; 0,1.21" begin="1.015s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.21 0,2.21 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.21 1.7,3.21 z" />
@@ -1311,7 +1274,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                                 <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
                             </g>
                         </g>
-                        <g transform="translate(52.7, 31.0)">
+                        <g transform="translate(51.0, 30.0)">
                             <g transform="translate(-0.0, 6.00)">
                                 <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                 <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
@@ -1324,7 +1287,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-3.4, 6.79)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.21; 0,0; 0,0; 0,1.21" begin="1.085s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.21; 0,0; 0,0; 0,1.21" begin="1.05s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.21 0,2.21 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.21 1.7,3.21 z" />
@@ -1347,14 +1310,14 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-10.2, 10.79)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.21; 0,0; 0,0; 0,1.21" begin="1.085s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.21; 0,0; 0,0; 0,1.21" begin="1.05s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.21 0,2.21 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.21 1.7,3.21 z" />
                                 </g>
                             </g>
                         </g>
-                        <g transform="translate(54.4, 32.0)">
+                        <g transform="translate(52.7, 31.0)">
                             <g transform="translate(-0.0, 6.00)">
                                 <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                 <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
@@ -1387,14 +1350,14 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-10.2, 10.75)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.25; 0,0; 0,0; 0,1.25" begin="1.12s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.25; 0,0; 0,0; 0,1.25" begin="1.085s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.25 0,2.25 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.25 1.7,3.25 z" />
                                 </g>
                             </g>
                         </g>
-                        <g transform="translate(56.1, 33.0)">
+                        <g transform="translate(54.4, 32.0)">
                             <g transform="translate(-0.0, 6.00)">
                                 <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                 <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
@@ -1407,7 +1370,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-3.4, 6.79)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.21; 0,0; 0,0; 0,1.21" begin="1.155s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.21; 0,0; 0,0; 0,1.21" begin="1.12s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.21 0,2.21 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.21 1.7,3.21 z" />
@@ -1434,7 +1397,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                                 <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
                             </g>
                         </g>
-                        <g transform="translate(57.8, 34.0)">
+                        <g transform="translate(56.1, 33.0)">
                             <g transform="translate(-0.0, 6.00)">
                                 <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                 <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
@@ -1457,7 +1420,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-6.8, 8.79)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.21; 0,0; 0,0; 0,1.21" begin="1.19s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.21; 0,0; 0,0; 0,1.21" begin="1.155s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.21 0,2.21 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.21 1.7,3.21 z" />
@@ -1470,11 +1433,48 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-10.2, 10.79)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.21; 0,0; 0,0; 0,1.21" begin="1.19s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.21; 0,0; 0,0; 0,1.21" begin="1.155s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.21 0,2.21 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.21 1.7,3.21 z" />
                                 </g>
+                            </g>
+                        </g>
+                        <g transform="translate(57.8, 34.0)">
+                            <g transform="translate(-0.0, 6.00)">
+                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
+                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
+                            </g>
+                            <g transform="translate(-1.7, 7.00)">
+                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
+                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
+                            </g>
+                            <g transform="translate(-3.4, 8.00)">
+                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
+                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
+                            </g>
+                            <g transform="translate(-5.1, 9.00)">
+                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
+                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
+                            </g>
+                            <g transform="translate(-6.8, 10.00)">
+                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
+                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
+                            </g>
+                            <g transform="translate(-8.5, 11.00)">
+                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
+                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
+                            </g>
+                            <g transform="translate(-10.2, 12.00)">
+                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
+                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
                             </g>
                         </g>
                         <g transform="translate(59.5, 35.0)">
@@ -1557,46 +1557,9 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                                 <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
                                 <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
                             </g>
-                            <g transform="translate(-1.7, 7.00)">
-                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
-                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
-                            </g>
-                            <g transform="translate(-3.4, 8.00)">
-                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
-                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
-                            </g>
-                            <g transform="translate(-5.1, 9.00)">
-                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
-                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
-                            </g>
-                            <g transform="translate(-6.8, 10.00)">
-                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
-                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
-                            </g>
-                            <g transform="translate(-8.5, 11.00)">
-                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
-                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
-                            </g>
-                            <g transform="translate(-10.2, 12.00)">
-                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
-                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
-                            </g>
-                        </g>
-                        <g transform="translate(64.6, 38.0)">
-                            <g transform="translate(-0.0, 6.00)">
-                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
-                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
-                            </g>
                             <g transform="translate(-1.7, 5.83)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.33s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.295s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
@@ -1624,17 +1587,17 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-10.2, 10.83)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.33s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.295s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
                                 </g>
                             </g>
                         </g>
-                        <g transform="translate(66.3, 39.0)">
+                        <g transform="translate(64.6, 38.0)">
                             <g transform="translate(-0.0, 4.83)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.365s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.33s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
@@ -1671,7 +1634,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                                 <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
                             </g>
                         </g>
-                        <g transform="translate(68.0, 40.0)">
+                        <g transform="translate(66.3, 39.0)">
                             <g transform="translate(-0.0, 6.00)">
                                 <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                 <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
@@ -1704,20 +1667,60 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-10.2, 10.79)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.21; 0,0; 0,0; 0,1.21" begin="1.4s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.21; 0,0; 0,0; 0,1.21" begin="1.365s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.21 0,2.21 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.21 1.7,3.21 z" />
                                 </g>
                             </g>
                         </g>
-                        <g transform="translate(69.7, 41.0)">
+                        <g transform="translate(68.0, 40.0)">
                             <g transform="translate(-0.0, 4.75)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.25; 0,0; 0,0; 0,1.25" begin="1.435s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.25; 0,0; 0,0; 0,1.25" begin="1.4s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.25 0,2.25 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.25 1.7,3.25 z" />
+                                </g>
+                            </g>
+                            <g transform="translate(-1.7, 7.00)">
+                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
+                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
+                            </g>
+                            <g transform="translate(-3.4, 8.00)">
+                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
+                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
+                            </g>
+                            <g transform="translate(-5.1, 9.00)">
+                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
+                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
+                            </g>
+                            <g transform="translate(-6.8, 10.00)">
+                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
+                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
+                            </g>
+                            <g transform="translate(-8.5, 11.00)">
+                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
+                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
+                            </g>
+                            <g transform="translate(-10.2, 12.00)">
+                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
+                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
+                            </g>
+                        </g>
+                        <g transform="translate(69.7, 41.0)">
+                            <g transform="translate(-0.0, 4.83)">
+                                <g>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.435s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
+                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
                                 </g>
                             </g>
                             <g transform="translate(-1.7, 7.00)">
@@ -1760,10 +1763,13 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
                                 </g>
                             </g>
-                            <g transform="translate(-1.7, 7.00)">
-                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
-                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
+                            <g transform="translate(-1.7, 5.83)">
+                                <g>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.47s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
+                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
+                                </g>
                             </g>
                             <g transform="translate(-3.4, 8.00)">
                                 <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
@@ -1780,10 +1786,13 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                                 <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
                                 <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
                             </g>
-                            <g transform="translate(-8.5, 11.00)">
-                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
-                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
+                            <g transform="translate(-8.5, 9.83)">
+                                <g>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.47s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
+                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
+                                </g>
                             </g>
                             <g transform="translate(-10.2, 12.00)">
                                 <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
@@ -1800,55 +1809,9 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
                                 </g>
                             </g>
-                            <g transform="translate(-1.7, 5.83)">
-                                <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.505s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
-                                  <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
-                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
-                                </g>
-                            </g>
-                            <g transform="translate(-3.4, 8.00)">
-                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
-                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
-                            </g>
-                            <g transform="translate(-5.1, 9.00)">
-                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
-                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
-                            </g>
-                            <g transform="translate(-6.8, 10.00)">
-                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
-                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
-                            </g>
-                            <g transform="translate(-8.5, 9.83)">
-                                <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.505s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
-                                  <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
-                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
-                                </g>
-                            </g>
-                            <g transform="translate(-10.2, 12.00)">
-                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
-                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
-                            </g>
-                        </g>
-                        <g transform="translate(74.8, 44.0)">
-                            <g transform="translate(-0.0, 4.83)">
-                                <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.54s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
-                                  <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
-                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
-                                </g>
-                            </g>
                             <g transform="translate(-1.7, 5.79)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.21; 0,0; 0,0; 0,1.21" begin="1.54s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.21; 0,0; 0,0; 0,1.21" begin="1.505s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.21 0,2.21 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.21 1.7,3.21 z" />
@@ -1856,7 +1819,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-3.4, 6.83)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.54s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.505s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
@@ -1864,7 +1827,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-5.1, 7.83)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.54s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.505s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
@@ -1872,7 +1835,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-6.8, 8.83)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.54s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.505s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
@@ -1880,10 +1843,68 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-8.5, 9.83)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.54s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.505s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
+                                </g>
+                            </g>
+                            <g transform="translate(-10.2, 10.83)">
+                                <g>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.505s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
+                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
+                                </g>
+                            </g>
+                        </g>
+                        <g transform="translate(74.8, 44.0)">
+                            <g transform="translate(-0.0, 4.71)">
+                                <g>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.29; 0,0; 0,0; 0,1.29" begin="1.54s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.29 0,2.29 z" />
+                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.29 1.7,3.29 z" />
+                                </g>
+                            </g>
+                            <g transform="translate(-1.7, 5.62)">
+                                <g>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.38; 0,0; 0,0; 0,1.38" begin="1.54s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.38 0,2.38 z" />
+                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.38 1.7,3.38 z" />
+                                </g>
+                            </g>
+                            <g transform="translate(-3.4, 6.62)">
+                                <g>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.38; 0,0; 0,0; 0,1.38" begin="1.54s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.38 0,2.38 z" />
+                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.38 1.7,3.38 z" />
+                                </g>
+                            </g>
+                            <g transform="translate(-5.1, 7.75)">
+                                <g>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.25; 0,0; 0,0; 0,1.25" begin="1.54s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.25 0,2.25 z" />
+                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.25 1.7,3.25 z" />
+                                </g>
+                            </g>
+                            <g transform="translate(-6.8, 8.71)">
+                                <g>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.29; 0,0; 0,0; 0,1.29" begin="1.54s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.29 0,2.29 z" />
+                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.29 1.7,3.29 z" />
+                                </g>
+                            </g>
+                            <g transform="translate(-8.5, 9.62)">
+                                <g>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.38; 0,0; 0,0; 0,1.38" begin="1.54s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.38 0,2.38 z" />
+                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.38 1.7,3.38 z" />
                                 </g>
                             </g>
                             <g transform="translate(-10.2, 10.83)">
@@ -1896,52 +1917,52 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                         </g>
                         <g transform="translate(76.5, 45.0)">
-                            <g transform="translate(-0.0, 4.71)">
+                            <g transform="translate(-0.0, 4.83)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.29; 0,0; 0,0; 0,1.29" begin="1.575s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.575s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.29 0,2.29 z" />
-                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.29 1.7,3.29 z" />
+                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
+                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
                                 </g>
                             </g>
-                            <g transform="translate(-1.7, 5.62)">
+                            <g transform="translate(-1.7, 5.83)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.38; 0,0; 0,0; 0,1.38" begin="1.575s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.575s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.38 0,2.38 z" />
-                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.38 1.7,3.38 z" />
+                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
+                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
                                 </g>
                             </g>
-                            <g transform="translate(-3.4, 6.62)">
+                            <g transform="translate(-3.4, 6.83)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.38; 0,0; 0,0; 0,1.38" begin="1.575s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.575s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.38 0,2.38 z" />
-                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.38 1.7,3.38 z" />
+                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
+                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
                                 </g>
                             </g>
-                            <g transform="translate(-5.1, 7.75)">
+                            <g transform="translate(-5.1, 7.83)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.25; 0,0; 0,0; 0,1.25" begin="1.575s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.575s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.25 0,2.25 z" />
-                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.25 1.7,3.25 z" />
+                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
+                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
                                 </g>
                             </g>
-                            <g transform="translate(-6.8, 8.71)">
+                            <g transform="translate(-6.8, 8.83)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.29; 0,0; 0,0; 0,1.29" begin="1.575s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.575s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.29 0,2.29 z" />
-                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.29 1.7,3.29 z" />
+                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
+                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
                                 </g>
                             </g>
-                            <g transform="translate(-8.5, 9.62)">
+                            <g transform="translate(-8.5, 9.83)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.38; 0,0; 0,0; 0,1.38" begin="1.575s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.575s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.38 0,2.38 z" />
-                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.38 1.7,3.38 z" />
+                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
+                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
                                 </g>
                             </g>
                             <g transform="translate(-10.2, 10.83)">
@@ -1954,67 +1975,9 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                         </g>
                         <g transform="translate(78.2, 46.0)">
-                            <g transform="translate(-0.0, 4.83)">
-                                <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.61s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
-                                  <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
-                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
-                                </g>
-                            </g>
-                            <g transform="translate(-1.7, 5.83)">
-                                <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.61s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
-                                  <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
-                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
-                                </g>
-                            </g>
-                            <g transform="translate(-3.4, 6.83)">
-                                <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.61s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
-                                  <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
-                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
-                                </g>
-                            </g>
-                            <g transform="translate(-5.1, 7.83)">
-                                <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.61s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
-                                  <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
-                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
-                                </g>
-                            </g>
-                            <g transform="translate(-6.8, 8.83)">
-                                <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.61s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
-                                  <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
-                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
-                                </g>
-                            </g>
-                            <g transform="translate(-8.5, 9.83)">
-                                <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.61s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
-                                  <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
-                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
-                                </g>
-                            </g>
-                            <g transform="translate(-10.2, 10.83)">
-                                <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.61s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
-                                  <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
-                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
-                                </g>
-                            </g>
-                        </g>
-                        <g transform="translate(79.9, 47.0)">
                             <g transform="translate(-0.0, 4.71)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.29; 0,0; 0,0; 0,1.29" begin="1.645s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.29; 0,0; 0,0; 0,1.29" begin="1.61s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.29 0,2.29 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.29 1.7,3.29 z" />
@@ -2022,7 +1985,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-1.7, 5.67)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.33; 0,0; 0,0; 0,1.33" begin="1.645s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.33; 0,0; 0,0; 0,1.33" begin="1.61s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.33 0,2.33 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.33 1.7,3.33 z" />
@@ -2030,7 +1993,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-3.4, 6.83)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.645s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.61s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
@@ -2038,7 +2001,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-5.1, 6.17)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,2.83; 0,0; 0,0; 0,2.83" begin="1.645s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,2.83; 0,0; 0,0; 0,2.83" begin="1.61s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l2" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l2" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,4.83 0,3.83 z" />
                                   <path class="c-l2" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,3.83 1.7,4.83 z" />
@@ -2046,7 +2009,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-6.8, 8.67)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.33; 0,0; 0,0; 0,1.33" begin="1.645s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.33; 0,0; 0,0; 0,1.33" begin="1.61s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.33 0,2.33 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.33 1.7,3.33 z" />
@@ -2054,7 +2017,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-8.5, 9.71)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.29; 0,0; 0,0; 0,1.29" begin="1.645s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.29; 0,0; 0,0; 0,1.29" begin="1.61s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.29 0,2.29 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.29 1.7,3.29 z" />
@@ -2062,17 +2025,17 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-10.2, 9.00)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,3.0; 0,0; 0,0; 0,3.0" begin="1.645s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,3.0; 0,0; 0,0; 0,3.0" begin="1.61s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l2" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l2" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,5.00 0,4.00 z" />
                                   <path class="c-l2" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,4.00 1.7,5.00 z" />
                                 </g>
                             </g>
                         </g>
-                        <g transform="translate(81.6, 48.0)">
+                        <g transform="translate(79.9, 47.0)">
                             <g transform="translate(-0.0, 4.54)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.46; 0,0; 0,0; 0,1.46" begin="1.68s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.46; 0,0; 0,0; 0,1.46" begin="1.645s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.46 0,2.46 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.46 1.7,3.46 z" />
@@ -2080,7 +2043,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-1.7, 2.54)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,4.46; 0,0; 0,0; 0,4.46" begin="1.68s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,4.46; 0,0; 0,0; 0,4.46" begin="1.645s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l3" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l3" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,6.46 0,5.46 z" />
                                   <path class="c-l3" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,5.46 1.7,6.46 z" />
@@ -2088,7 +2051,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-3.4, 6.71)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.29; 0,0; 0,0; 0,1.29" begin="1.68s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.29; 0,0; 0,0; 0,1.29" begin="1.645s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.29 0,2.29 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.29 1.7,3.29 z" />
@@ -2096,7 +2059,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-5.1, 7.62)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.38; 0,0; 0,0; 0,1.38" begin="1.68s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.38; 0,0; 0,0; 0,1.38" begin="1.645s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.38 0,2.38 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.38 1.7,3.38 z" />
@@ -2104,7 +2067,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-6.8, 8.71)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.29; 0,0; 0,0; 0,1.29" begin="1.68s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.29; 0,0; 0,0; 0,1.29" begin="1.645s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.29 0,2.29 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.29 1.7,3.29 z" />
@@ -2112,7 +2075,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-8.5, 9.83)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.68s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.645s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
@@ -2120,17 +2083,17 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-10.2, 10.62)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.38; 0,0; 0,0; 0,1.38" begin="1.68s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.38; 0,0; 0,0; 0,1.38" begin="1.645s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.38 0,2.38 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.38 1.7,3.38 z" />
                                 </g>
                             </g>
                         </g>
-                        <g transform="translate(83.3, 49.0)">
+                        <g transform="translate(81.6, 48.0)">
                             <g transform="translate(-0.0, 4.62)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.38; 0,0; 0,0; 0,1.38" begin="1.715s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.38; 0,0; 0,0; 0,1.38" begin="1.68s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.38 0,2.38 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.38 1.7,3.38 z" />
@@ -2143,7 +2106,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-3.4, 6.83)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.715s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.68s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
@@ -2156,7 +2119,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-6.8, 7.33)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,2.67; 0,0; 0,0; 0,2.67" begin="1.715s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,2.67; 0,0; 0,0; 0,2.67" begin="1.68s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l2" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l2" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,4.67 0,3.67 z" />
                                   <path class="c-l2" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,3.67 1.7,4.67 z" />
@@ -2164,7 +2127,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-8.5, 9.83)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.715s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.68s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
@@ -2172,17 +2135,17 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-10.2, 10.54)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.46; 0,0; 0,0; 0,1.46" begin="1.715s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.46; 0,0; 0,0; 0,1.46" begin="1.68s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.46 0,2.46 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.46 1.7,3.46 z" />
                                 </g>
                             </g>
                         </g>
-                        <g transform="translate(85.0, 50.0)">
+                        <g transform="translate(83.3, 49.0)">
                             <g transform="translate(-0.0, 4.79)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.21; 0,0; 0,0; 0,1.21" begin="1.75s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.21; 0,0; 0,0; 0,1.21" begin="1.715s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.21 0,2.21 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.21 1.7,3.21 z" />
@@ -2190,7 +2153,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-1.7, 5.62)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.38; 0,0; 0,0; 0,1.38" begin="1.75s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.38; 0,0; 0,0; 0,1.38" begin="1.715s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.38 0,2.38 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.38 1.7,3.38 z" />
@@ -2198,7 +2161,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-3.4, 6.75)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.25; 0,0; 0,0; 0,1.25" begin="1.75s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.25; 0,0; 0,0; 0,1.25" begin="1.715s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.25 0,2.25 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.25 1.7,3.25 z" />
@@ -2206,7 +2169,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-5.1, 7.62)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.38; 0,0; 0,0; 0,1.38" begin="1.75s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.38; 0,0; 0,0; 0,1.38" begin="1.715s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.38 0,2.38 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.38 1.7,3.38 z" />
@@ -2214,7 +2177,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-6.8, 8.79)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.21; 0,0; 0,0; 0,1.21" begin="1.75s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.21; 0,0; 0,0; 0,1.21" begin="1.715s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.21 0,2.21 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.21 1.7,3.21 z" />
@@ -2222,7 +2185,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-8.5, 9.67)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.33; 0,0; 0,0; 0,1.33" begin="1.75s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.33; 0,0; 0,0; 0,1.33" begin="1.715s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.33 0,2.33 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.33 1.7,3.33 z" />
@@ -2230,17 +2193,17 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-10.2, 6.00)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,6.0; 0,0; 0,0; 0,6.0" begin="1.75s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,6.0; 0,0; 0,0; 0,6.0" begin="1.715s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l4" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l4" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,8.00 0,7.00 z" />
                                   <path class="c-l4" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,7.00 1.7,8.00 z" />
                                 </g>
                             </g>
                         </g>
-                        <g transform="translate(86.7, 51.0)">
+                        <g transform="translate(85.0, 50.0)">
                             <g transform="translate(-0.0, 3.04)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,2.96; 0,0; 0,0; 0,2.96" begin="1.785s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,2.96; 0,0; 0,0; 0,2.96" begin="1.75s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l2" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l2" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,4.96 0,3.96 z" />
                                   <path class="c-l2" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,3.96 1.7,4.96 z" />
@@ -2248,7 +2211,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-1.7, 5.83)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.785s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.75s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
@@ -2256,7 +2219,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-3.4, 5.04)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,2.96; 0,0; 0,0; 0,2.96" begin="1.785s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,2.96; 0,0; 0,0; 0,2.96" begin="1.75s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l2" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l2" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,4.96 0,3.96 z" />
                                   <path class="c-l2" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,3.96 1.7,4.96 z" />
@@ -2269,7 +2232,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-6.8, 8.83)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.785s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.17; 0,0; 0,0; 0,1.17" begin="1.75s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.17 0,2.17 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.17 1.7,3.17 z" />
@@ -2282,17 +2245,17 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-10.2, 10.75)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.25; 0,0; 0,0; 0,1.25" begin="1.785s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.25; 0,0; 0,0; 0,1.25" begin="1.75s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.25 0,2.25 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.25 1.7,3.25 z" />
                                 </g>
                             </g>
                         </g>
-                        <g transform="translate(88.4, 52.0)">
+                        <g transform="translate(86.7, 51.0)">
                             <g transform="translate(-0.0, 4.71)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.29; 0,0; 0,0; 0,1.29" begin="1.82s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.29; 0,0; 0,0; 0,1.29" begin="1.785s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.29 0,2.29 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.29 1.7,3.29 z" />
@@ -2300,7 +2263,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-1.7, 5.50)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.5; 0,0; 0,0; 0,1.5" begin="1.82s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.5; 0,0; 0,0; 0,1.5" begin="1.785s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.50 0,2.50 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.50 1.7,3.50 z" />
@@ -2308,7 +2271,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-3.4, 6.50)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.5; 0,0; 0,0; 0,1.5" begin="1.82s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.5; 0,0; 0,0; 0,1.5" begin="1.785s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.50 0,2.50 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.50 1.7,3.50 z" />
@@ -2316,7 +2279,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-5.1, 7.75)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.25; 0,0; 0,0; 0,1.25" begin="1.82s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.25; 0,0; 0,0; 0,1.25" begin="1.785s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.25 0,2.25 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.25 1.7,3.25 z" />
@@ -2324,7 +2287,7 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-6.8, 8.71)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.29; 0,0; 0,0; 0,1.29" begin="1.82s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.29; 0,0; 0,0; 0,1.29" begin="1.785s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.29 0,2.29 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.29 1.7,3.29 z" />
@@ -2332,16 +2295,29 @@ section > .field { margin-left: 5px; margin-right: 5px; }
                             </g>
                             <g transform="translate(-8.5, 9.67)">
                                 <g>
-                                  <animateTransform attributeName="transform" type="translate" values="0,1.33; 0,0; 0,0; 0,1.33" begin="1.82s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.33; 0,0; 0,0; 0,1.33" begin="1.785s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
                                   <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
                                   <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.33 0,2.33 z" />
                                   <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.33 1.7,3.33 z" />
                                 </g>
                             </g>
-                            <g transform="translate(-10.2, 12.00)">
-                                <path class="c-empty" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
-                                <path class="c-empty" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z" />
-                                <path class="c-empty" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z" />
+                            <g transform="translate(-10.2, 10.54)">
+                                <g>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.46; 0,0; 0,0; 0,1.46" begin="1.785s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.46 0,2.46 z" />
+                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.46 1.7,3.46 z" />
+                                </g>
+                            </g>
+                        </g>
+                        <g transform="translate(88.4, 52.0)">
+                            <g transform="translate(-0.0, 4.75)">
+                                <g>
+                                  <animateTransform attributeName="transform" type="translate" values="0,1.25; 0,0; 0,0; 0,1.25" begin="1.82s" dur="7.7s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.286; 0.87; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                                  <path class="c-l1" d="M1.7,2 0,1 1.7,0 3.4,1 z" />
+                                  <path class="c-l1" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.25 0,2.25 z" />
+                                  <path class="c-l1" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.25 1.7,3.25 z" />
+                                </g>
                             </g>
                         </g>
                     </g>
